@@ -1,0 +1,41 @@
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><OTA_ProfileCreateRQ PrimaryLangID="de" Version="3.20" Target="Production" TimeStamp="2013-06-13T11:34:15" xmlns="http://www.opentravel.org/OTA/2003/05">
+    <Profile CreateDateTime="1970-01-01T12:00:00" ProfileType="12">
+        <Accesses>
+            <Access ID="ACC23456" ActionType="Create"/>
+        </Accesses>
+        <CompanyInfo>
+            <CompanyName TravelSector="3">CultSwitchAdapterHotel</CompanyName>
+            <AddressInfo UseType="12" Type="2">
+                <StreetNmbr>Dwaraka Nagar 3rd Lane</StreetNmbr>
+                <CityName>Visakhapatnam</CityName>
+                <PostalCode>530011</PostalCode>
+                <StateProv>Berlin</StateProv>
+                <CountryName Code="DE"/>
+            </AddressInfo>
+            <TelephoneInfo FormattedInd="true" PhoneNumber="+49 (30) 726225-01" PhoneTechType="3" DefaultInd="true"/>
+            <TelephoneInfo FormattedInd="true" PhoneNumber="+49 (30) 726225-58" PhoneTechType="1" DefaultInd="true"/>
+            <Email>sowjanya.gudela@cultuzz.com</Email>
+        </CompanyInfo>
+    </Profile>
+</OTA_ProfileCreateRQ>
+
+518474
+NTE4NDc0**MDQ=**Yzc5M2Q4MmU4NDljOWJhZg==
+
+=========================================================
+
+
+
+
+<OTA_ProfileCreateRS TimeStamp="2014-04-22T10:41:24" Version="3.00"><Success/>
+<UniqueID ID="48393" ID_Context="CLTZ" Type="10">
+    <CompanyName>CultSwitchAdapterHotel</CompanyName>
+</UniqueID>
+<TPA_Extensitions>
+    <ResponseTime ProcessTime="2.814" ProcessTimeUnit="Seconds" RequestStartTime="2014-04-22 10:41:24.857" ResponseEndTime="2014-04-22 10:41:27.671"/>
+    <POS>
+        <Source AgentDutyCode="b5dc263c3b3d203" AgentSine="46017"/>
+    </POS>
+</TPA_Extensitions>
+</OTA_ProfileCreateRS>

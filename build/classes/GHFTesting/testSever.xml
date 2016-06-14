@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Transaction timestamp="2015-07-03T12:52:21" id="401-55-20150703-125221-1">
+    <Result>
+        <Property>56025</Property>
+        <Checkin>2015-08-21</Checkin>
+        <Nights>5</Nights>
+        <AllowablePointsOfSale>
+            <PointOfSale id="cultbooking.com"/>
+        </AllowablePointsOfSale>
+        <RoomBundle>
+            <RoomData>
+                <Name>
+                    <Text language="de" text="Double bedroom"/>
+                </Name>
+            </RoomData>
+            <PackageData>
+                <RatePlanID>130305</RatePlanID>
+                <Occupancy>2</Occupancy>
+                <Refundable available="false"/>
+                <BreakfastIncluded>true</BreakfastIncluded>
+            </PackageData>
+            <Baserate all_inclusive="true" currency="EEK">101.0</Baserate>
+            <Tax currency="EEK">0</Tax>
+            <OtherFees currency="EEK">0</OtherFees>
+        </RoomBundle>
+    </Result>
+    <Result>
+        <Property>56025</Property>
+        <Checkin>2015-08-21</Checkin>
+        <Nights>10</Nights>
+        <AllowablePointsOfSale>
+            <PointOfSale id="cultbooking.com"/>
+        </AllowablePointsOfSale>
+        <RoomBundle>
+            <RoomData>
+                <Name>
+                    <Text language="de" text="Double bedroom"/>
+                </Name>
+            </RoomData>
+            <PackageData>
+                <RatePlanID>130287</RatePlanID>
+                <Occupancy>2</Occupancy>
+                <Refundable available="false"/>
+                <BreakfastIncluded>false</BreakfastIncluded>
+            </PackageData>
+            <Baserate all_inclusive="true" currency="EEK">-1</Baserate>
+            <Tax currency="EEK">0</Tax>
+            <OtherFees currency="EEK">0</OtherFees>
+        </RoomBundle>
+    </Result>
+    <Result>
+        <Property>56025</Property>
+        <Checkin>2015-08-21</Checkin>
+        <Nights>10</Nights>
+        <AllowablePointsOfSale>
+            <PointOfSale id="cultbooking.com"/>
+        </AllowablePointsOfSale>
+        <RoomBundle>
+            <RoomData>
+                <Name>
+                    <Text language="de" text="Double bedroom"/>
+                </Name>
+            </RoomData>
+            <PackageData>
+                <RatePlanID>130319</RatePlanID>
+                <Occupancy>2</Occupancy>
+                <Refundable available="false"/>
+                <BreakfastIncluded>false</BreakfastIncluded>
+            </PackageData>
+            <Baserate all_inclusive="true" currency="EEK">101.0</Baserate>
+            <Tax currency="EEK">0</Tax>
+            <OtherFees currency="EEK">0</OtherFees>
+        </RoomBundle>
+    </Result>
+    <Result>
+        <Property>56025</Property>
+        <Checkin>2015-08-21</Checkin>
+        <Nights>10</Nights>
+        <AllowablePointsOfSale>
+            <PointOfSale id="cultbooking.com"/>
+        </AllowablePointsOfSale>
+        <RoomBundle>
+            <RoomData>
+                <Name>
+                    <Text language="de" text="Double bedroom"/>
+                </Name>
+            </RoomData>
+            <PackageData>
+                <RatePlanID>130307</RatePlanID>
+                <Occupancy>2</Occupancy>
+                <Refundable available="false"/>
+                <BreakfastIncluded>true</BreakfastIncluded>
+            </PackageData>
+            <Baserate all_inclusive="true" currency="EEK">101.0</Baserate>
+            <Tax currency="EEK">0</Tax>
+            <OtherFees currency="EEK">0</OtherFees>
+        </RoomBundle>
+    </Result>
+    <Result>
+        <Property>56025</Property>
+        <Checkin>2015-08-21</Checkin>
+        <Nights>10</Nights>
+        <AllowablePointsOfSale>
+            <PointOfSale id="cultbooking.com"/>
+        </AllowablePointsOfSale>
+        <RoomBundle>
+            <RoomData>
+                <Name>
+                    <Text language="de" text="Double bedroom"/>
+                </Name>
+            </RoomData>
+            <PackageData>
+                <RatePlanID>130309</RatePlanID>
+                <Occupancy>2</Occupancy>
+                <Refundable available="false"/>
+                <BreakfastIncluded>true</BreakfastIncluded>
+            </PackageData>
+            <Baserate all_inclusive="true" currency="EEK">-1</Baserate>
+            <Tax currency="EEK">0</Tax>
+            <OtherFees currency="EEK">0</OtherFees>
+        </RoomBundle>
+    </Result>
+    <Result>
+        <Property>56025</Property>
+        <Checkin>2015-08-26</Checkin>
+        <Nights>5</Nights>
+        <AllowablePointsOfSale>
+            <PointOfSale id="cultbooking.com"/>
+        </AllowablePointsOfSale>
+        <RoomBundle>
+            <RoomData>
+                <Name>
+                    <Text language="de" text="Double bedroom"/>
+                </Name>
+            </RoomData>
+            <PackageData>
+                <RatePlanID>130305</RatePlanID>
+                <Occupancy>2</Occupancy>
+                <Refundable available="false"/>
+                <BreakfastIncluded>true</BreakfastIncluded>
+            </PackageData>
+            <Baserate all_inclusive="true" currency="EEK">101.0</Baserate>
+            <Tax currency="EEK">0</Tax>
+            <OtherFees currency="EEK">0</OtherFees>
+        </RoomBundle>
+    </Result>
+</Transaction>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Transaction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element  maxOccurs="unbounded" ref="Result"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:string"/>
+      <xs:attribute name="timestamp" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Result">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Property"/>
+        <xs:element ref="Checkin"/>
+        <xs:element ref="Nights"/>
+        <xs:element ref="RoomID"/>
+        <xs:element ref="Baserate"/>
+        <xs:element ref="Tax"/>
+        <xs:element ref="OtherFees"/>
+        <xs:element ref="ChargeCurrency"/>
+        <xs:element ref="Custom1"/>
+        <xs:element ref="AllowablePointsOfSale"/>
+        <xs:element maxOccurs="unbounded" ref="RoomBundle"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Property" type="xs:string"/>
+  <xs:element name="Checkin" type="xs:string"/>
+  <xs:element name="Nights" type="xs:integer"/>
+  <xs:element name="RoomBundle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="RoomID"/>
+        <xs:element ref="RatePlanID"/>
+        <xs:element ref="Name"/>
+        <xs:element ref="Description"/>
+        <xs:element maxOccurs="unbounded" ref="PhotoURL"/>
+        <xs:element ref="Capacity"/>
+        <xs:element ref="Occupancy"/>
+        <xs:element ref="ChargeCurrency"/>
+        <xs:element ref="Refundable"/>
+        <xs:element ref="BreakfastIncluded"/>
+        <xs:element ref="ParkingIncluded"/>
+        <xs:element ref="InternetIncluded"/>
+        <xs:element ref="Baserate"/>
+        <xs:element ref="Tax"/>
+        <xs:element ref="OtherFees"/>
+        <xs:element ref="Custom1"/>
+        <xs:element ref="AllowablePointsOfSale"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RatePlanID" type="xs:string"/>
+  <xs:element name="Name">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Text"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Description">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Text"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PhotoURL">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Caption"/>
+        <xs:element ref="URL"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Caption">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Text"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="URL" type="xs:string"/>
+  <xs:element name="Capacity" type="xs:integer"/>
+  <xs:element name="Occupancy" type="xs:integer"/>
+  <xs:element name="Refundable">
+    <xs:complexType>
+      <xs:attribute name="available" use="required" type="xs:boolean"/>
+      <xs:attribute name="refundable_until_days" use="required" type="xs:integer"/>
+      <xs:attribute name="refundable_until_time" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BreakfastIncluded" type="xs:string"/>
+  <xs:element name="ParkingIncluded" type="xs:string"/>
+  <xs:element name="InternetIncluded" type="xs:string"/>
+  <xs:element name="RoomID" type="xs:string"/>
+  <xs:element name="Baserate">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:decimal">
+          <xs:attribute name="currency" use="required" type="xs:string"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Tax">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:decimal">
+          <xs:attribute name="currency" use="required" type="xs:string"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OtherFees">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:decimal">
+          <xs:attribute name="currency" use="required" type="xs:string"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChargeCurrency" type="xs:string"/>
+  <xs:element name="Custom1" type="xs:string"/>
+  <xs:element name="AllowablePointsOfSale">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PointOfSale"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PointOfSale">
+    <xs:complexType>
+      <xs:attribute name="id" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Text">
+    <xs:complexType>
+      <xs:attribute name="language" use="required" type="xs:string"/>
+      <xs:attribute name="text" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

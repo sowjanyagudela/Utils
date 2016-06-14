@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><BMSBookingNotifRQ
+xmlns="http://messages.bms.hotelbeds.com" echoToken="104445938459922209"
+timestamp="2016-05-23 11:28:02.0">
+    
+    <Establishment
+xmlns="http://types.messages.bms.hotelbeds.com" code="173146">
+    <Reference>
+        <FileNumber>922209</FileNumber>
+        <IncomingOffice>59</
+IncomingOffice><RefNumber>59-922209-83</RefNumber>
+    </Reference>
+    <Status>BOOKING</Status>
+    <CreationDate date="20160523"/>
+    <CheckInDate
+date="20160610"/><LOS>0</LOS>
+<EstablishmentInfo>
+    <Code>0000213735</Code>
+    <Name
+
+    MONTE ROSADA ALBERGARIA</Name></EstablishmentInfo>
+<RoomList>
+<Room code="DBT">
+<Type>Double or Twin</Type>
+<BoardTypeCode>HB</BoardTypeCode>
+<BoardType>HALFBOARD</BoardType>
+<CharacteristicCode>ST</CharacteristicCode><Characteristic>
+STANDARD</Characteristic>
+
+<Remarks>Obs:.</Remarks><BaseBoardTypeCode>BB</Base
+BoardTypeCode><BaseBoardType>BED AND
+BREAKFAST</BaseBoardType>
+<Occupancy><AdultCount>2</AdultCount><ChildCount>0<
+/ChildCount><BabyCount>0</BabyCount><GuestList>
+<Customer type="AD"><Age>30</Age><Name>Alfredo</Name><LastName>Ferreira</LastName>
+</Customer>
+<Customer type="AD"><Age>30</Age><Name>Alfredo</Name><LastName>Ferreira</LastName>
+</Customer>
+</GuestList>
+</Occupancy>
+<Contract>
+<Code>24567</Code><Name>NRF-BAR</Name>
+<Description>FROM  ALLOCATION</Description></Contract>
+<DateFrom
+date="20160610"/><DateTo date="20160612"/><RateList><Rate
+code="**"><DateFrom date="20160610"/><DateTo
+date="20160612"/><Amount>74.00</Amount><Currency>EUR</Currency></Rate></Rate
+List><GuaranteeList/><SupplementList><Supplement><Description>BOARD
+SUPPLEMENT</Description><AdultNumber>2</AdultNumber><ChildrenNumber>0</Child
+renNumber></Supplement></SupplementList><DiscountList><Discount><Description NON REFUNDABLE
+
+DISCOUNT</Description><AdultNumber>2</AdultNumber><ChildrenNumber>0</Childre
+nNumber></Discount></DiscountList><NumberOfUnits>1</NumberOfUnits><Status>BO
+OKING</Status><OrderNumber>1</OrderNumber></Room></RoomList><Holder>ALFREDO
+FERREIRA</Holder></Establishment>
+
+
+
+<FreeList/><TTOO
+xmlns="http://types.messages.bms.hotelbeds.com" code="**"><market>SPAIN
+</market><branch>**</branch><BranchSalesName>**</BranchSalesName></TTOO><Pro
+viderInfoList/><ContractingOffice
+xmlns="http://types.messages.bms.hotelbeds.com"><CompanyCode>E10</CompanyCod
+e><CompanyName>HOTELBEDS</CompanyName></ContractingOffice></BMSBookingNotifR
+Q>

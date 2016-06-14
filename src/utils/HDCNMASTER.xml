@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><OTA_HotelResNotifRQ CSAUUID="64da3c08-bda1-4f5e-af9b-d3ef346abe2c-1817040066"xmlns="http://www.opentravel.org/OTA/2003/05" TimeStamp="2015-03-03T08:44:29" Target="Production" Version="3.20" PrimaryLangID="en" ><POS>
+<Source>
+<RequestorID Type="10" ID="14000"/><BookingChannel Type="7"/>
+</Source>
+
+</POS> <HotelReservations>
+        <HotelReservation CreateDateTime="2015-03-03T08:44:24" RoomStayReservation="true">
+            <UniqueID ID="4258304" Type="14"/>
+            <RoomStays>
+                <RoomStay IndexNumber="11" MarketCode="10362" SourceOfBusiness="TOMAS">
+                    <RoomTypes>
+                        <RoomType NumberOfUnits="1" RoomTypeCode="38412">
+                            <RoomDescription
+                                LastModifyDateTime="2015-02-27T16:07:52" Name="EZ Standard">
+                                <Text><![CDATA[
+EZ Standard]]></Text>
+                            </RoomDescription>
+                        </RoomType>
+                        <RoomType IsRoom="false" RoomTypeCode="PD277366"/>
+                    </RoomTypes>
+                    <RoomRates>
+                        <RoomRate BookingCode="4258304"
+                            NumberOfUnits="1" RatePlanID="277366"
+                            RatePlanType="11" RoomTypeCode="38412"/>
+                        <RoomRate BookingCode="4258304"
+                            NumberOfUnits="1" RoomTypeCode="PD277366">
+                            <Rates>
+                                <Rate EffectiveDate="2015-05-04">
+                                    <Base AmountAfterTax="80.00" CurrencyCode="EUR"/>
+                                </Rate>
+                            </Rates>
+                        </RoomRate>
+                    </RoomRates>
+                    <TimeSpan End="2015-05-05" Start="2015-05-04"/>
+                    <Total AmountAfterTax="80.00" CurrencyCode="EUR"/>
+                    <Comments>
+                        <Comment>
+                            <Text><![CDATA[children Ages are 
+FIT00020070113970754
+LHS_Destinationsportal (Lindau)]]></Text>
+                        </Comment>
+                    </Comments>
+                </RoomStay>
+            </RoomStays>
+            <ResGuests>
+                <ResGuest ResGuestRPH="4324474">
+                    <Profiles>
+                        <ProfileInfo>
+                            <Profile ProfileType="1">
+                                <Customer Gender="UnKnown">
+                                    <PersonName>
+                                    <GivenName><![CDATA[Stadt Heilbronn, Planungs- und Baurechtsamt]]></GivenName>
+                                    <Surname/>
+                                    </PersonName>
+                                    <Telephone PhoneNumber="07131/56-2705"/>
+                                    <Email><![CDATA[erika.schaser@stadt-heilbronn.de]]></Email>
+                                    <Address FormattedInd="false">
+                                    <StreetNmbr><![CDATA[Cäcilienstr. 45]]></StreetNmbr>
+                                    <CityName><![CDATA[Heilbronn]]></CityName>
+                                    <PostalCode><![CDATA[74072]]></PostalCode>
+                                    <CountryName Code="DE"/>
+                                    </Address>
+                                </Customer>
+                            </Profile>
+                        </ProfileInfo>
+                    </Profiles>
+                </ResGuest>
+                <ResGuest>
+                    <Profiles>
+                        <ProfileInfo>
+                            <Profile>
+                                <Customer>
+                                    <PersonName/>
+                                </Customer>
+                            </Profile>
+                        </ProfileInfo>
+                    </Profiles>
+                </ResGuest>
+            </ResGuests>
+            <ResGlobalInfo>
+                <GuestCounts IsPerRoom="false">
+                    <GuestCount AgeQualifyingCode="10" Count="1"/>
+                </GuestCounts>
+                <TimeSpan End="2015-05-05" Start="2015-05-04"/>
+                <Total AmountAfterTax="80.00" CurrencyCode="EUR"/>
+                <HotelReservationIDs>
+                    <HotelReservationID ResID_Date="2015-03-03T07:51:22"
+                        ResID_Source="Tomas"
+                        ResID_SourceContext="TransactionNumber" ResID_Value="Not Provided"/>
+                    <HotelReservationID ResID_Date="2015-03-03T07:51:22"
+                        ResID_Source="Tomas"
+                        ResID_SourceContext="BookingID" ResID_Value="2027319-1"/>
+                </HotelReservationIDs>
+            </ResGlobalInfo>
+        </HotelReservation>
+        <HotelReservation CreateDateTime="2015-03-03T08:44:28" RoomStayReservation="true">
+            <UniqueID ID="4258306" Type="14"/>
+            <RoomStays>
+                <RoomStay IndexNumber="11" MarketCode="10362" SourceOfBusiness="TOMAS">
+                    <RoomTypes>
+                        <RoomType NumberOfUnits="1" RoomTypeCode="38412">
+                            <RoomDescription
+                                LastModifyDateTime="2015-02-27T16:07:52" Name="EZ Standard">
+                                <Text><![CDATA[
+EZ Standard]]></Text>
+                            </RoomDescription>
+                        </RoomType>
+                        <RoomType IsRoom="false" RoomTypeCode="PD277366"/>
+                    </RoomTypes>
+                    <RoomRates>
+                        <RoomRate BookingCode="4258306"
+                            NumberOfUnits="1" RatePlanID="277366"
+                            RatePlanType="11" RoomTypeCode="38412"/>
+                        <RoomRate BookingCode="4258306"
+                            NumberOfUnits="1" RoomTypeCode="PD277366">
+                            <Rates>
+                                <Rate EffectiveDate="2015-05-04">
+                                    <Base AmountAfterTax="80.00" CurrencyCode="EUR"/>
+                                </Rate>
+                            </Rates>
+                        </RoomRate>
+                    </RoomRates>
+                    <TimeSpan End="2015-05-05" Start="2015-05-04"/>
+                    <Total AmountAfterTax="80.00" CurrencyCode="EUR"/>
+                    <Comments>
+                        <Comment>
+                            <Text><![CDATA[children Ages are 
+FIT00020070113970754
+LHS_Destinationsportal (Lindau)]]></Text>
+                        </Comment>
+                    </Comments>
+                </RoomStay>
+            </RoomStays>
+            <ResGuests>
+                <ResGuest ResGuestRPH="4324476">
+                    <Profiles>
+                        <ProfileInfo>
+                            <Profile ProfileType="1">
+                                <Customer Gender="UnKnown">
+                                    <PersonName>
+                                    <GivenName><![CDATA[Stadt Heilbronn, Planungs- und Baurechtsamt]]></GivenName>
+                                    <Surname/>
+                                    </PersonName>
+                                    <Telephone PhoneNumber="07131/56-2705"/>
+                                    <Email><![CDATA[erika.schaser@stadt-heilbronn.de]]></Email>
+                                    <Address FormattedInd="false">
+                                    <StreetNmbr><![CDATA[Cäcilienstr. 45]]></StreetNmbr>
+                                    <CityName><![CDATA[Heilbronn]]></CityName>
+                                    <PostalCode><![CDATA[74072]]></PostalCode>
+                                    <CountryName Code="DE"/>
+                                    </Address>
+                                </Customer>
+                            </Profile>
+                        </ProfileInfo>
+                    </Profiles>
+                </ResGuest>
+                <ResGuest>
+                    <Profiles>
+                        <ProfileInfo>
+                            <Profile>
+                                <Customer>
+                                    <PersonName/>
+                                </Customer>
+                            </Profile>
+                        </ProfileInfo>
+                    </Profiles>
+                </ResGuest>
+            </ResGuests>
+            <ResGlobalInfo>
+                <GuestCounts IsPerRoom="false">
+                    <GuestCount AgeQualifyingCode="10" Count="1"/>
+                </GuestCounts>
+                <TimeSpan End="2015-05-05" Start="2015-05-04"/>
+                <Total AmountAfterTax="80.00" CurrencyCode="EUR"/>
+                <HotelReservationIDs>
+                    <HotelReservationID ResID_Date="2015-03-03T07:51:24"
+                        ResID_Source="Tomas"
+                        ResID_SourceContext="TransactionNumber" ResID_Value="Not Provided"/>
+                    <HotelReservationID ResID_Date="2015-03-03T07:51:24"
+                        ResID_Source="Tomas"
+                        ResID_SourceContext="BookingID" ResID_Value="2027319-2"/>
+                </HotelReservationIDs>
+            </ResGlobalInfo>
+        </HotelReservation>
+    </HotelReservations></OTA_HotelResNotifRQ>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OTA_HotelAvailRQ TimeStamp="2015-04-14T11:24:42" Target="Production" Version="3.14" PrimaryLangID="en" xmlns="http://www.opentravel.org/OTA/2003/05">
+    <POS>
+        <Source AgentSine="50410" AgentDutyCode="5c24f04b4b682d6c">
+            <BookingChannel Type="7"/>
+        </Source>
+    </POS>
+    <AvailRequestSegments>
+        <AvailRequestSegment>
+            <StayDateRange Start="2016-05-25" End="2016-05-26"/>
+            <RatePlanCandidates>
+                <RatePlanCandidate RatePlanType="11"/>
+            </RatePlanCandidates>
+            <RoomStayCandidates>
+                <RoomStayCandidate>
+                    <GuestCounts>
+                        <GuestCount AgeQualifyingCode="10" Count="1"/>
+                    </GuestCounts>
+                </RoomStayCandidate>
+            </RoomStayCandidates>
+            <HotelSearchCriteria>
+                <Criterion>
+                    <HotelRef HotelCode="1770" HotelCodeContext="CLTZ"/>
+                </Criterion>
+               
+                <Criterion ExactMatch="true">
+                    <RoomStayCandidates>
+                        <RoomStayCandidate>
+                            <GuestCounts>
+                                <GuestCount AgeQualifyingCode="10" Count="2"/>
+                            </GuestCounts>
+                        </RoomStayCandidate>
+                    </RoomStayCandidates>
+                </Criterion>
+            </HotelSearchCriteria>
+        </AvailRequestSegment>
+       
+    </AvailRequestSegments>
+</OTA_HotelAvailRQ>
+
+
+
+<?xml version="1.0" encoding="UTF-8"?><OTA_HotelAvailRQ xmlns="http://www.opentravel.org/OTA/2003/05" TimeStamp="2016-05-25T07:51:17"  Target="Production" TransactionIdentifier="CBV3:CPC" Version="3.30" PrimaryLangID="en">
+    <POS>
+        <Source AgentSine="46125" AgentDutyCode="cd9a370b618ede0">
+            <RequestorID Type="10" ID_Context= "CLTZ" URL="www" ID="55601"/>
+            <BookingChannel Type="7"/>
+        </Source>
+    </POS>
+    <AvailRequestSegments>
+        <AvailRequestSegment>
+            <StayDateRange Start="2016-05-25" End="2016-05-26"/>
+            <RatePlanCandidates>
+              <RatePlanCandidate RatePlanType="11" RatePlanID="134183"/>
+                <RatePlanCandidate RatePlanType="11" RatePlanID="134181"/>
+                <RatePlanCandidate RatePlanType="11" RatePlanID="134179"/>
+                <RatePlanCandidate RatePlanType="11" RatePlanID="134177"/>
+                <RatePlanCandidate RatePlanType="11" RatePlanID="134175"/>
+                <RatePlanCandidate RatePlanType="11" RatePlanID="134173"/>
+                <RatePlanCandidate RatePlanType="11" RatePlanID="134171"/>
+                <RatePlanCandidate RatePlanType="11" RatePlanID="134169"/>
+                <RatePlanCandidate RatePlanType="11" RatePlanID="134167"/>
+                <RatePlanCandidate RatePlanType="11" RatePlanID="134165"/>
+            </RatePlanCandidates>
+              <HotelSearchCriteria>
+                <Criterion>
+                    <HotelRef HotelCode="55601" HotelCodeContext="CLTZ"/>
+                </Criterion>
+               
+                <Criterion ExactMatch="true">
+                    <RoomStayCandidates>
+                        <RoomStayCandidate>
+                            <GuestCounts>
+                                <GuestCount AgeQualifyingCode="10" Count="2"/>
+                            </GuestCounts>
+                        </RoomStayCandidate>
+                    </RoomStayCandidates>
+                </Criterion>
+            </HotelSearchCriteria>
+        </AvailRequestSegment>
+    </AvailRequestSegments>
+</OTA_HotelAvailRQ>

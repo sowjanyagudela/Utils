@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Transaction id="880-39-20150521-060035-1" timestamp="2015-05-21T06:00:35">
+    <Result>
+        <Property>55819</Property>
+        <Checkin>2015-07-02</Checkin>
+        <Nights>5</Nights>
+        <RoomID>92541</RoomID>
+        <AllowablePointsOfSale>
+            <PointOfSale id="cultbooking.com"/>
+        </AllowablePointsOfSale>
+        <RoomBundle>
+            <RoomID>92541</RoomID>
+            <RatePlanID>128821</RatePlanID>
+            <Name>
+                <Text language="en" text="Single bedroom in en"/>
+            </Name>
+            <Occupancy>1</Occupancy>
+            <Refundable/>
+            <BreakfastIncluded>0</BreakfastIncluded>
+            <Baserate>-1</Baserate>
+            <Tax/>
+            <OtherFees/>
+        </RoomBundle>
+    </Result>
+    <Result>
+        <Property>55819</Property>
+        <Checkin>2015-07-02</Checkin>
+        <Nights>4</Nights>
+        <RoomID>92541</RoomID>
+        <AllowablePointsOfSale>
+            <PointOfSale id="cultbooking.com"/>
+        </AllowablePointsOfSale>
+        <RoomBundle>
+            <RoomID>92541</RoomID>
+            <RatePlanID>128823</RatePlanID>
+            <Name>
+                <Text language="en" text="Single bedroom in en"/>
+            </Name>
+            <Occupancy>1</Occupancy>
+            <Refundable/>
+            <BreakfastIncluded>0</BreakfastIncluded>
+            <Baserate>300.0</Baserate>
+            <Tax/>
+            <OtherFees/>
+        </RoomBundle>
+    </Result>
+    <Result>
+        <Property>55819</Property>
+        <Checkin>2015-07-06</Checkin>
+        <Nights>1</Nights>
+        <RoomID>92541</RoomID>
+        <AllowablePointsOfSale>
+            <PointOfSale id="cultbooking.com"/>
+        </AllowablePointsOfSale>
+        <RoomBundle>
+            <RoomID>92541</RoomID>
+            <RatePlanID>128823</RatePlanID>
+            <Name>
+                <Text language="en" text="Single bedroom in en"/>
+            </Name>
+            <Occupancy>1</Occupancy>
+            <Refundable/>
+            <BreakfastIncluded>0</BreakfastIncluded>
+            <Baserate>99.85</Baserate>
+            <Tax/>
+            <OtherFees/>
+        </RoomBundle>
+    </Result>
+    <Result>
+        <Property>55819</Property>
+        <Checkin>2015-07-02</Checkin>
+        <Nights>5</Nights>
+        <RoomID>92541</RoomID>
+        <AllowablePointsOfSale>
+            <PointOfSale id="cultbooking.com"/>
+        </AllowablePointsOfSale>
+        <RoomBundle>
+            <RoomID>92541</RoomID>
+            <RatePlanID>128827</RatePlanID>
+            <Name>
+                <Text language="en" text="Single bedroom in en"/>
+            </Name>
+            <Occupancy>1</Occupancy>
+            <Refundable/>
+            <BreakfastIncluded>0</BreakfastIncluded>
+            <Baserate>-1</Baserate>
+            <Tax/>
+            <OtherFees/>
+        </RoomBundle>
+    </Result>
+</Transaction>

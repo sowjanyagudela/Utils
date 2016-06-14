@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><OTA_HotelAvailRQ TimeStamp="2015-08-06T12:49:13" Target="Production" Version="3.14" PrimaryLangID="en" xmlns="http://www.opentravel.org/OTA/2003/05">
+    <POS>
+        <Source AgentSine="53161" AgentDutyCode="f49b63339120d770">
+            <BookingChannel Type="7"/>
+        </Source>
+    </POS>
+    <AvailRequestSegments>
+        <AvailRequestSegment>
+            <StayDateRange Start="2015-08-22" End="2015-08-23"/>
+            <RatePlanCandidates>
+                <RatePlanCandidate RatePlanType="11"/>
+            </RatePlanCandidates>
+            <RoomStayCandidates>
+                <RoomStayCandidate>
+                    <GuestCounts>
+                        <GuestCount AgeQualifyingCode="10" Count="1"/>
+                    </GuestCounts>
+                </RoomStayCandidate>
+            </RoomStayCandidates>
+            <HotelSearchCriteria>
+                <Criterion>
+                    <HotelRef HotelCode="10512" HotelCodeContext="CLTZ"/>
+                </Criterion>
+                <Criterion ExactMatch="true">
+                    <RoomStayCandidates>
+                        <RoomStayCandidate>
+                            <GuestCounts>
+                                <GuestCount AgeQualifyingCode="10" Count="1"/>
+                            </GuestCounts>
+                        </RoomStayCandidate>
+                    </RoomStayCandidates>
+                </Criterion>
+            </HotelSearchCriteria>
+        </AvailRequestSegment>
+        <AvailRequestSegment>
+            <StayDateRange Start="2015-08-22" End="2015-08-23"/>
+            <RatePlanCandidates>
+                <RatePlanCandidate RatePlanType="11"/>
+            </RatePlanCandidates>
+            <RoomStayCandidates>
+                <RoomStayCandidate>
+                    <GuestCounts>
+                        <GuestCount AgeQualifyingCode="10" Count="2"/>
+                    </GuestCounts>
+                </RoomStayCandidate>
+            </RoomStayCandidates>
+            <HotelSearchCriteria>
+                <Criterion>
+                    <HotelRef HotelCode="10512" HotelCodeContext="CLTZ"/>
+                </Criterion>
+                <Criterion ExactMatch="true">
+                    <RoomStayCandidates>
+                        <RoomStayCandidate>
+                            <GuestCounts>
+                                <GuestCount AgeQualifyingCode="10" Count="2"/>
+                            </GuestCounts>
+                        </RoomStayCandidate>
+                    </RoomStayCandidates>
+                </Criterion>
+            </HotelSearchCriteria>
+        </AvailRequestSegment>
+    </AvailRequestSegments>
+</OTA_HotelAvailRQ>
+
+
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><OTA_HotelAvailRQ TimeStamp="2016-06-13T05:43:48" Target="Production" Version="3.14" PrimaryLangID="en" xmlns="http://www.opentravel.org/OTA/2003/05">
+    <POS>
+        <Source AgentSine="44432" AgentDutyCode="3d9f0db185cffd74">
+            <BookingChannel Type="7"/>
+        </Source>
+    </POS>
+    <AvailRequestSegments>
+        <AvailRequestSegment>
+            <StayDateRange Start="2016-06-14" End="2016-06-15"/>
+            <RatePlanCandidates/>
+            <RoomStayCandidates>
+                <RoomStayCandidate>
+                    <GuestCounts>
+                        <GuestCount AgeQualifyingCode="10" Count="2"/>
+                    </GuestCounts>
+                </RoomStayCandidate>
+            </RoomStayCandidates>
+            <HotelSearchCriteria>
+                <Criterion>
+                    <HotelRef HotelCode="2208" HotelCodeContext="CLTZ"/>
+                </Criterion>
+                <Criterion ExactMatch="true">
+                    <RoomStayCandidates>
+                        <RoomStayCandidate>
+                            <GuestCounts>
+                                <GuestCount AgeQualifyingCode="10" Count="2"/>
+                            </GuestCounts>
+                        </RoomStayCandidate>
+                    </RoomStayCandidates>
+                </Criterion>
+            </HotelSearchCriteria>
+        </AvailRequestSegment>
+    </AvailRequestSegments>
+</OTA_HotelAvailRQ>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><OTA_HotelAvailRQ TimeStamp="2016-06-13T06:14:59" Target="Production" Version="3.14" PrimaryLangID="en" xmlns="http://www.opentravel.org/OTA/2003/05">
+    <POS>
+        <Source AgentSine="53161" AgentDutyCode="f49b63339120d770">
+            <BookingChannel Type="7"/>
+        </Source>
+    </POS>
+    <AvailRequestSegments>
+        <AvailRequestSegment>
+            <StayDateRange Start="2016-06-19" End="2016-06-20"/>
+            <RoomStayCandidates>
+                <RoomStayCandidate>
+                    <GuestCounts>
+                        <GuestCount AgeQualifyingCode="10" Count="2"/>
+                    </GuestCounts>
+                </RoomStayCandidate>
+            </RoomStayCandidates>
+            <HotelSearchCriteria>
+                <Criterion>
+                    <HotelRef HotelCode="56221" HotelCodeContext="CLTZ"/>
+                </Criterion>
+                <Criterion ExactMatch="true">
+                    <RoomStayCandidates>
+                        <RoomStayCandidate>
+                            <GuestCounts>
+                                <GuestCount AgeQualifyingCode="10" Count="2"/>
+                            </GuestCounts>
+                        </RoomStayCandidate>
+                    </RoomStayCandidates>
+                </Criterion>
+            </HotelSearchCriteria>
+        </AvailRequestSegment>
+    </AvailRequestSegments>
+</OTA_HotelAvailRQ>
+
+
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><OTA_HotelAvailRQ TimeStamp="2016-06-13T06:14:59" Target="Production" Version="3.14" PrimaryLangID="en" xmlns="http://www.opentravel.org/OTA/2003/05">
+    <POS>
+        <Source AgentSine="53161" AgentDutyCode="f49b63339120d770">
+            <BookingChannel Type="7"/>
+        </Source>
+    </POS>
+    <AvailRequestSegments>
+        <AvailRequestSegment>
+            <StayDateRange Start="2016-06-20" End="2016-06-21"/>
+            <RoomStayCandidates>
+                <RoomStayCandidate>
+                    <GuestCounts>
+                        <GuestCount AgeQualifyingCode="10" Count="2"/>
+                    </GuestCounts>
+                </RoomStayCandidate>
+            </RoomStayCandidates>
+            <HotelSearchCriteria>
+                <Criterion>
+                    <HotelRef HotelCode="56221" HotelCodeContext="CLTZ"/>
+                </Criterion>
+                <Criterion ExactMatch="true">
+                    <RoomStayCandidates>
+                        <RoomStayCandidate>
+                            <GuestCounts>
+                                <GuestCount AgeQualifyingCode="10" Count="2"/>
+                            </GuestCounts>
+                        </RoomStayCandidate>
+                    </RoomStayCandidates>
+                </Criterion>
+            </HotelSearchCriteria>
+        </AvailRequestSegment>
+    </AvailRequestSegments>
+</OTA_HotelAvailRQ>
+
+
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><OTA_HotelResRQ ResStatus="Initiate" EchoToken="19234-2226-56221-53161-01" TimeStamp="2016-06-13T06:19:53.783Z" Target="Production" Version="3.31" SequenceNmbr="1" PrimaryLangID="en" xmlns="http://www.opentravel.org/OTA/2003/05">
+    <POS>
+        <Source AgentSine="53161" AgentDutyCode="f49b63339120d770">
+            <RequestorID Type="10" ID_Context="CLTZ" ID="56221"/>
+            <BookingChannel Type="7"/>
+        </Source>
+    </POS>
+    <HotelReservations>
+        <HotelReservation RoomStayReservation="true">
+            <UniqueID Type="10" ID_Context="CLTZ" ID="56221"/>
+            <RoomStays>
+                <RoomStay>
+                    <RoomRates>
+                        <RoomRate NumberOfUnits="1" RatePlanType="11" RatePlanID="133269"/>
+                    </RoomRates>
+                    <GuestCounts IsPerRoom="false">
+                        <GuestCount AgeQualifyingCode="10" Count="1"/>
+                        <GuestCount Age="5" Count="1"/>
+                    </GuestCounts>
+                    <TimeSpan Start="2016-06-24" End="2016-06-25"/>
+                    <Comments>
+                        <Comment Name="A pre-made pillow fort and Vanilla coke on arrival please."/>
+                    </Comments>
+                </RoomStay>
+            </RoomStays>
+            <ResGuests>
+                <ResGuest ResGuestRPH="1">
+                    <Profiles>
+                        <ProfileInfo>
+                            <Profile>
+                                <Customer>
+                                    <PersonName>
+                                        <GivenName>Paul</GivenName>
+                                        <Surname>Revere</Surname>
+                                    </PersonName>
+                                    <Telephone PhoneNumber="5555555555"/>
+                                    <Email>paul.revere@tripadvisor.com</Email>
+                                    <Address>
+                                        <StreetNmbr>141 Needham Street</StreetNmbr>
+                                        <CityName>newton</CityName>
+                                        <PostalCode>77777</PostalCode>
+                                        <County>US</County>
+                                    </Address>
+                                    <Address UseType="3">
+                                        <AddressLine>Paul</AddressLine>
+                                        <AddressLine>Revere</AddressLine>
+                                        <AddressLine>141 Needham Street</AddressLine>
+                                        <CityName>newton</CityName>
+                                        <PostalCode>77777</PostalCode>
+                                        <County>US</County>
+                                        <StateProv>MA</StateProv>
+                                    </Address>
+                                </Customer>
+                            </Profile>
+                        </ProfileInfo>
+                    </Profiles>
+                </ResGuest>
+                <ResGuest ResGuestRPH="11-133269">
+                    <Profiles>
+                        <ProfileInfo>
+                            <Profile>
+                                <Customer>
+                                    <PersonName>
+                                        <GivenName>Paul</GivenName>
+                                        <Surname>Revere</Surname>
+                                    </PersonName>
+                                </Customer>
+                            </Profile>
+                        </ProfileInfo>
+                    </Profiles>
+                    <GuestCounts>
+                        <GuestCount AgeQualifyingCode="10" Count="1"/>
+                        <GuestCount Age="5" Count="1"/>
+                    </GuestCounts>
+                </ResGuest>
+            </ResGuests>
+            <ResGlobalInfo>
+                <Guarantee>
+                    <GuaranteesAccepted>
+                        <GuaranteeAccepted>
+                            <PaymentCard CardType="MasterCard" CardCode="MA" CardNumber="5555555555554444" SeriesCode="000" ExpireDate="12-22">
+                                <CardHolderName>ADAPTER BOOKING</CardHolderName>
+                            </PaymentCard>
+                        </GuaranteeAccepted>
+                    </GuaranteesAccepted>
+                </Guarantee>
+            </ResGlobalInfo>
+        </HotelReservation>
+    </HotelReservations>
+</OTA_HotelResRQ>
+
+
+
+xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OTA_HotelResRQ ResStatus="Commit" EchoToken="31717-809-56221-53161-01" TimeStamp="2016-06-13T06:23:01.620Z" Target="Production" Version="3.31" SequenceNmbr="1" PrimaryLangID="en" xmlns="http://www.opentravel.org/OTA/2003/05">
+    <POS>
+        <Source AgentSine="53161" AgentDutyCode="f49b63339120d770">
+            <RequestorID Type="10" ID_Context="CLTZ" ID="56221"/>
+            <BookingChannel Type="7"/>
+        </Source>
+    </POS>
+    <HotelReservations>
+        <HotelReservation RoomStayReservation="true">
+            <UniqueID Type="14" ID_Context="CLTZ" ID="900101"/>
+            <ResGlobalInfo>
+                <Guarantee GuaranteeCode="3" GuaranteeType="CC/DC/Voucher">
+                    <GuaranteesAccepted>
+                        <GuaranteeAccepted>
+                            <PaymentCard CardType="1" CardCode="VI" CardNumber="5454545454545454" SeriesCode="999" ExpireDate="2016">
+                                <CardHolderName>Paul Revere</CardHolderName>
+                            </PaymentCard>
+                        </GuaranteeAccepted>
+                    </GuaranteesAccepted>
+                </Guarantee>
+            </ResGlobalInfo>
+        </HotelReservation>
+    </HotelReservations>
+</OTA_HotelResRQ>

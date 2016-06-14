@@ -1,0 +1,276 @@
+<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+    <env:Body>
+        <ns2:hsvReservationInformationResponse xmlns:ns2="com.hrs.ws.hsv">
+            <hsvReservationInformationResponse xmlns="">
+                <responseTimeMillis>540</responseTimeMillis>
+                <resultCode>0</resultCode>
+                <reservationsProcesses>
+                    <reservationProcessKey>81343638</reservationProcessKey>
+                    <reservations>
+                        <reservationKey>153209179</reservationKey>
+                        <reservationStatus>reserved</reservationStatus>
+                        <reservationMode>guaranteed</reservationMode>
+                        <reservation>2016-04-15T13:16:00.000+02:00</reservation>
+                        <cancellation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                        <modificationTimestamp>2016-04-15T13:16:07.876+02:00</modificationTimestamp>
+                        <predecessorReservationKey xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                        <from>2016-04-20+02:00</from>
+                        <to>2016-04-21+02:00</to>
+                        <singleRoomCount>1</singleRoomCount>
+                        <doubleRoomCount>0</doubleRoomCount>
+                        <adultCount>1</adultCount>
+                        <childCount>0</childCount>
+                        <totalPrice>
+                            <amount>89</amount>
+                            <isoCurrency>EUR</isoCurrency>
+                        </totalPrice>
+                        <rates>
+                            <rateKey>tradeShow</rateKey>
+                            <rateLabel>Messerate</rateLabel>
+                            <rebateType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <categoryType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <childAccommodationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <packageKey xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <roomType>single</roomType>
+                            <from>2016-04-20+02:00</from>
+                            <to>2016-04-21+02:00</to>
+                            <price>
+                                <amount>89</amount>
+                                <isoCurrency>EUR</isoCurrency>
+                            </price>
+                            <boardType>inclusiveBreakfast</boardType>
+                            <reservedRates>1</reservedRates>
+                        </rates>
+                        <orderer>
+                            <title xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <firstName>Hannelore</firstName>
+                            <middleName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <lastName>Rieck</lastName>
+                            <phone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <email xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                        </orderer>
+                        <billingAddress>
+                            <company>DHL SOLUTIONS GMBH</company>
+                            <title xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <firstName>Cornelis</firstName>
+                            <middleName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <lastName>Smilde</lastName>
+                            <dateOfBirth xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <street>Hammerbrookstr. 94</street>
+                            <postalCode>20097</postalCode>
+                            <city>Hamburg</city>
+                            <iso3Country>deu</iso3Country>
+                        </billingAddress>
+                        <guests>
+                            <title xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <firstName>Cornelis</firstName>
+                            <middleName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <lastName>Smilde</lastName>
+                            <dateOfBirth xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <bedType>regularBed</bedType>
+                        </guests>
+                        <reservationWish></reservationWish>
+                    </reservations>
+                </reservationsProcesses>
+                <reservationsProcesses>
+                    <reservationProcessKey>81340909</reservationProcessKey>
+                    <reservations>
+                        <reservationKey>153204592</reservationKey>
+                        <reservationStatus>reserved</reservationStatus>
+                        <reservationMode>guaranteed</reservationMode>
+                        <reservation>2016-04-15T12:34:00.000+02:00</reservation>
+                        <cancellation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                        <modificationTimestamp>2016-04-15T12:34:36.742+02:00</modificationTimestamp>
+                        <predecessorReservationKey xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                        <from>2016-05-18+02:00</from>
+                        <to>2016-05-24+02:00</to>
+                        <singleRoomCount>1</singleRoomCount>
+                        <doubleRoomCount>0</doubleRoomCount>
+                        <adultCount>1</adultCount>
+                        <childCount>0</childCount>
+                        <totalPrice>
+                            <amount>504</amount>
+                            <isoCurrency>EUR</isoCurrency>
+                        </totalPrice>
+                        <rates>
+                            <rateKey>0</rateKey>
+                            <rateLabel>HRS-RATE</rateLabel>
+                            <rebateType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <categoryType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <childAccommodationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <packageKey xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <roomType>single</roomType>
+                            <from>2016-05-18+02:00</from>
+                            <to>2016-05-24+02:00</to>
+                            <price>
+                                <amount>84</amount>
+                                <isoCurrency>EUR</isoCurrency>
+                            </price>
+                            <boardType>exclusive</boardType>
+                            <reservedRates>1</reservedRates>
+                        </rates>
+                        <orderer>
+                            <title xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <firstName>Herr</firstName>
+                            <middleName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <lastName>Stephan</lastName>
+                            <phone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <email xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                        </orderer>
+                        <billingAddress>
+                            <company>Werbung &amp; Messebau</company>
+                            <title xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <firstName>Herr</firstName>
+                            <middleName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <lastName>Stephan</lastName>
+                            <dateOfBirth xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <street>Olebachweg 41-43</street>
+                            <postalCode>34123</postalCode>
+                            <city>Kassel</city>
+                            <iso3Country>deu</iso3Country>
+                        </billingAddress>
+                        <guests>
+                            <title xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <firstName></firstName>
+                            <middleName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <lastName>Werbung &amp; Messebau</lastName>
+                            <dateOfBirth xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <bedType>regularBed</bedType>
+                        </guests>
+                        <reservationWish></reservationWish>
+                    </reservations>
+                    <reservations>
+                        <reservationKey>153204593</reservationKey>
+                        <reservationStatus>reserved</reservationStatus>
+                        <reservationMode>guaranteed</reservationMode>
+                        <reservation>2016-04-15T12:34:00.000+02:00</reservation>
+                        <cancellation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                        <modificationTimestamp>2016-04-15T12:34:36.746+02:00</modificationTimestamp>
+                        <predecessorReservationKey xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                        <from>2016-05-18+02:00</from>
+                        <to>2016-05-24+02:00</to>
+                        <singleRoomCount>1</singleRoomCount>
+                        <doubleRoomCount>0</doubleRoomCount>
+                        <adultCount>1</adultCount>
+                        <childCount>0</childCount>
+                        <totalPrice>
+                            <amount>504</amount>
+                            <isoCurrency>EUR</isoCurrency>
+                        </totalPrice>
+                        <rates>
+                            <rateKey>0</rateKey>
+                            <rateLabel>HRS-RATE</rateLabel>
+                            <rebateType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <categoryType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <childAccommodationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <packageKey xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <roomType>single</roomType>
+                            <from>2016-05-18+02:00</from>
+                            <to>2016-05-24+02:00</to>
+                            <price>
+                                <amount>84</amount>
+                                <isoCurrency>EUR</isoCurrency>
+                            </price>
+                            <boardType>exclusive</boardType>
+                            <reservedRates>1</reservedRates>
+                        </rates>
+                        <orderer>
+                            <title xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <firstName>Herr</firstName>
+                            <middleName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <lastName>Stephan</lastName>
+                            <phone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <email xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                        </orderer>
+                        <billingAddress>
+                            <company>Werbung &amp; Messebau</company>
+                            <title xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <firstName>Herr</firstName>
+                            <middleName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <lastName>Stephan</lastName>
+                            <dateOfBirth xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <street>Olebachweg 41-43</street>
+                            <postalCode>34123</postalCode>
+                            <city>Kassel</city>
+                            <iso3Country>deu</iso3Country>
+                        </billingAddress>
+                        <guests>
+                            <title xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <firstName></firstName>
+                            <middleName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <lastName>Werbung &amp; Messebau</lastName>
+                            <dateOfBirth xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <bedType>regularBed</bedType>
+                        </guests>
+                        <reservationWish></reservationWish>
+                    </reservations>
+                    <reservations>
+                        <reservationKey>153204594</reservationKey>
+                        <reservationStatus>reserved</reservationStatus>
+                        <reservationMode>guaranteed</reservationMode>
+                        <reservation>2016-04-15T12:34:00.000+02:00</reservation>
+                        <cancellation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                        <modificationTimestamp>2016-04-15T12:34:36.748+02:00</modificationTimestamp>
+                        <predecessorReservationKey xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                        <from>2016-05-18+02:00</from>
+                        <to>2016-05-24+02:00</to>
+                        <singleRoomCount>1</singleRoomCount>
+                        <doubleRoomCount>0</doubleRoomCount>
+                        <adultCount>1</adultCount>
+                        <childCount>0</childCount>
+                        <totalPrice>
+                            <amount>504</amount>
+                            <isoCurrency>EUR</isoCurrency>
+                        </totalPrice>
+                        <rates>
+                            <rateKey>0</rateKey>
+                            <rateLabel>HRS-RATE</rateLabel>
+                            <rebateType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <categoryType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <childAccommodationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <packageKey xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <roomType>single</roomType>
+                            <from>2016-05-18+02:00</from>
+                            <to>2016-05-24+02:00</to>
+                            <price>
+                                <amount>84</amount>
+                                <isoCurrency>EUR</isoCurrency>
+                            </price>
+                            <boardType>exclusive</boardType>
+                            <reservedRates>1</reservedRates>
+                        </rates>
+                        <orderer>
+                            <title xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <firstName>Herr</firstName>
+                            <middleName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <lastName>Stephan</lastName>
+                            <phone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <email xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                        </orderer>
+                        <billingAddress>
+                            <company>Werbung &amp; Messebau</company>
+                            <title xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <firstName>Herr</firstName>
+                            <middleName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <lastName>Stephan</lastName>
+                            <dateOfBirth xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <street>Olebachweg 41-43</street>
+                            <postalCode>34123</postalCode>
+                            <city>Kassel</city>
+                            <iso3Country>deu</iso3Country>
+                        </billingAddress>
+                        <guests>
+                            <title xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <firstName></firstName>
+                            <middleName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <lastName>Werbung &amp; Messebau</lastName>
+                            <dateOfBirth xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                            <bedType>regularBed</bedType>
+                        </guests>
+                        <reservationWish></reservationWish>
+                    </reservations>
+                </reservationsProcesses>
+            </hsvReservationInformationResponse>
+        </ns2:hsvReservationInformationResponse>
+    </env:Body>
+</env:Envelope>

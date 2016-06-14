@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OTA_HotelResRQ EchoToken="ce70618e-0884-456a-a5f1-8dfab686219b" 
+                ResStatus="Initiate" TimeStamp="2016-05-26T08:58:18.7900189 01:00" 
+                Version="3.0" xmlns="http://www.opentravel.org/OTA/2003/05">
+    <POS>
+        <Source>
+            <RequestorID ID="Cultuzz" MessagePassword="supeDruse5pudren" Type="1"/>
+            <BookingChannel Type="7"/>
+        </Source>
+    </POS>
+    <HotelReservations>
+        <HotelReservation>
+            <RoomStays>
+                <RoomStay>
+                    <RoomTypes>
+                        <RoomType NonSmoking="true" NumberOfUnits="1" RoomTypeCode="SmallDouble"/>
+                    </RoomTypes>
+                    <RatePlans>
+                        <RatePlan RatePlanCode="Standard"/>
+                    </RatePlans>
+                    <RoomRates>
+                        <RoomRate BookingCode="Standard">
+                            <Rates>
+                                <Rate>
+                                    <Base AmountBeforeTax="75.00" DecimalPlaces="2" CurrencyCode="GBP"/>
+                                    <Total AmountAfterTax="75.00" AmountBeforeTax="75.00" DecimalPlaces="2" CurrencyCode="GBP"/>
+                                </Rate>
+                            </Rates>
+                        </RoomRate>
+                    </RoomRates>
+                    <GuestCounts IsPerRoom="true">
+                        <GuestCount AgeQualifyingCode="10" Count="1"/>
+                    </GuestCounts>
+                    <Guarantee GuaranteeCode="CC" GuaranteeType="CC/DC/Voucher">
+                        <GuaranteesAccepted>
+                            <GuaranteeAccepted>
+                                <PaymentCard CardCode="" CardNumber="" CardType="" ExpireDate="" SeriesCode="">
+                                    <CardHolderName></CardHolderName>
+                                </PaymentCard>
+                            </GuaranteeAccepted>
+                        </GuaranteesAccepted>
+                    </Guarantee>
+                    <BasicPropertyInfo HotelCode="48192"/>
+                    <ResGuestRPHs>
+                        <ResGuestRPH RPH="1"/>
+                    </ResGuestRPHs>
+                    <SpecialRequests>
+                        <SpecialRequest Language="en">
+                            <Text Language="en">Please charged this card for the booking powered by Conferma If you require the CVV please contact Redfern Travel tel 01274 726424</Text>
+                        </SpecialRequest>
+                    </SpecialRequests>
+                </RoomStay>
+            </RoomStays>
+            <ResGuests>
+                <ResGuest ResGuestRPH="1" ArrivalTime="15:00:00.0000000 01:00">
+                    <Profiles>
+                        <ProfileInfo>
+                            <Profile>
+                                <Customer>
+                                    <PersonName>
+                                        <GivenName>M</GivenName>
+                                        <Surname>WHILD</Surname>
+                                    </PersonName>
+                                    <Telephone PhoneNumber="01274726424"/>
+                                    <Email>f168209c-6e25-4eab-b43d-942ca1f2261f@null.null</Email>
+                                    <Address Type="1">
+                                        <AddressLine>c/o Redfern Travel</AddressLine>
+                                        <AddressLine>AIT House</AddressLine>
+                                        <CityName>16 Eldon Place</CityName>
+                                        <PostalCode>BD1 3AZ</PostalCode>
+                                        <CountryName Code="GB">UK</CountryName>
+                                    </Address>
+                                </Customer>
+                            </Profile>
+                        </ProfileInfo>
+                    </Profiles>
+                </ResGuest>
+            </ResGuests>
+            <ResGlobalInfo>
+                <GuestCounts IsPerRoom="false">
+                    <GuestCount AgeQualifyingCode="10" Count="1"/>
+                </GuestCounts>
+                <TimeSpan Duration="P1D" Start="2016-05-31"/>
+                <Guarantee GuaranteeCode="CC" GuaranteeType="CC/DC/Voucher">
+                    <GuaranteesAccepted>
+                        <GuaranteeAccepted>
+                            <PaymentCard CardCode="" CardNumber="" CardType="" ExpireDate="" SeriesCode="">
+                                <CardHolderName></CardHolderName>
+                            </PaymentCard>
+                        </GuaranteeAccepted>
+                    </GuaranteesAccepted>
+                </Guarantee>
+                <HotelReservationIDs>
+                    <HotelReservationID ResID_Date="2016-05-31T00:00:00" ResID_Source="Laterooms" ResID_Type="5" ResID_Value="32159095R"/>
+                </HotelReservationIDs>
+            </ResGlobalInfo>
+        </HotelReservation>
+    </HotelReservations>
+</OTA_HotelResRQ>

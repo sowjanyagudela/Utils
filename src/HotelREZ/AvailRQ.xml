@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><OTA_HotelAvailRQ TimeStamp="2016-05-17T09:43:50" Target="Production" Version="3.14" PrimaryLangID="en" xmlns="http://www.opentravel.org/OTA/2003/05">
+    <POS>
+        <Source AgentSine="53161" AgentDutyCode="f49b63339120d770">
+            <BookingChannel Type="7"/>
+        </Source>
+    </POS>
+    <AvailRequestSegments>
+        <AvailRequestSegment>
+            <StayDateRange Start="2016-06-12" End="2016-06-13"/>
+            <RatePlanCandidates>
+                <RatePlanCandidate RatePlanType="11"/>
+                <RatePlanCandidate RatePlanType="11" RatePlanID="134031"/>
+                <RatePlanCandidate RatePlanType="11" RatePlanID="133777"/>
+                <RatePlanCandidate RatePlanType="11" RatePlanID="132757"/>
+                <RatePlanCandidate RatePlanType="11" RatePlanID="134069"/>
+                <RatePlanCandidate RatePlanType="11" RatePlanID="133775"/>
+                <RatePlanCandidate RatePlanType="11" RatePlanID="134201"/>
+                <RatePlanCandidate RatePlanType="11" RatePlanID="133773"/>
+            </RatePlanCandidates>
+            <RoomStayCandidates>
+                <RoomStayCandidate>
+                    <GuestCounts>
+                        <GuestCount AgeQualifyingCode="10" Count="2"/>
+                    </GuestCounts>
+                </RoomStayCandidate>
+            </RoomStayCandidates>
+            <HotelSearchCriteria>
+                <Criterion>
+                    <HotelRef HotelCode="12570" HotelCodeContext="CLTZ"/>
+                </Criterion>
+                <Criterion ExactMatch="true">
+                    <RoomStayCandidates>
+                        <RoomStayCandidate>
+                            <GuestCounts>
+                                <GuestCount AgeQualifyingCode="10" Count="2"/>
+                            </GuestCounts>
+                        </RoomStayCandidate>
+                    </RoomStayCandidates>
+                </Criterion>
+            </HotelSearchCriteria>
+        </AvailRequestSegment>
+    </AvailRequestSegments>
+</OTA_HotelAvailRQ>

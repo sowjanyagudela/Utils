@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:setAvailabilitiesRequest reflection="0" update_type="0" only_availability="false" fullfill_date="2016-05-24 16:02:34" validation="1" callStatus="1" channnelPWD="d;;BB:&lt;" channelUID="&lt;&lt;=A" channnelObjectId="CULTENZIANHOA" cltzObjectId="42540" date_time="2016-05-24 16:02:30" reason="cltsw_rateamountupdate FastLane" xmlns:ns2="http://www.cultagent4.com/sa_xml">
+    <ns2:communicate_info path="" port="" host="">
+        <ns2:property value="550" key="maxDateRange"/>
+        <ns2:property value="60000" key="socketTimeOut"/>
+        <ns2:property value="CU72TU58ZZ" key="agentDutyCode"/>
+    </ns2:communicate_info>
+    <ns2:product_info>
+        <ns2:product_ids CultuzzID="272162"/>
+        <ns2:validity Maxvalidity="2020-12-31"/>
+        <ns2:room_ids ChannelName="Dreibettzimmer, Dusche, WC" ChannelID="CULENZDRDWC" CultuzzID="97092"/>
+        <ns2:rate_ids Type="Dreibettzimmer mit Dusche, WC" ChannelID="CULENZDRDWCP"/>
+        <ns2:occupancy max="3" base="3" min="3"/>
+        <ns2:arrival_days sunday="true" saturday="true" friday="true" thursday="true" wednesday="true" tuesday="true" monday="true"/>
+        <ns2:available_days sunday="true" saturday="true" friday="true" thursday="true" wednesday="true" tuesday="true" monday="true"/>
+        <ns2:departure_days sunday="true" saturday="true" friday="true" thursday="true" wednesday="true" tuesday="true" monday="true"/>
+        <ns2:board_info allInclude="false" fbInclude="false" hbInclude="false" brInclude="true"/>
+        <ns2:Booking_Rules>
+            <ns2:AdvanceBookingRelease max_days="0" max_months="0" max_years="0" days="0" months="0" years="0"/>
+            <ns2:GuaranteePaymentFee percent="0.0" amount="0.0"/>
+        </ns2:Booking_Rules>
+    </ns2:product_info>
+    <ns2:product>
+        <ns2:salesChannel entry="http://www.feratel.com">
+            <ns2:availData receivedTime="2016-05-24 16:02:16" rateId="CULENZDRDWCP" roomId="CULENZDRDWC">
+                <ns2:date datevalue="2017-11-25">
+                    <ns2:variation baby="0" child="0" adult="3">
+                        <ns2:price cs_value="117.0" value="117.0" type="PPR"/>
+                        <ns2:count cs_value="3" value="0" type="CPR"/>
+                        <ns2:virtual_availabilities value="3"/>
+                        <ns2:curr value="EUR"/>
+                        <ns2:partsList>
+                            <ns2:board currency="N/A" price="0.00" type="BR"/>
+                        </ns2:partsList>
+                        <ns2:stay max="999" min="4"/>
+                        <ns2:warranty value="CC/DC/Voucher"/>
+                        <ns2:cancellations>
+                            <ns2:cancellation type="BeforeArrival" unit="Day" value="1">
+                                <ns2:cancellation_fee type="FullStay" nights="0" percent="100.0"/>
+                            </ns2:cancellation>
+                        </ns2:cancellations>
+                        <ns2:productCancellations>
+                            <ns2:cancellation type="BeforeArrival" unit="Day" value="1">
+                                <ns2:cancellation_fee type="FullStay" nights="0" percent="100.0"/>
+                            </ns2:cancellation>
+                        </ns2:productCancellations>
+                        <ns2:guaranteed_allotment release_days="0" guaranteed="0"/>
+                        <ns2:arrival value="true"/>
+                        <ns2:departure value="true"/>
+                        <ns2:secured value="true"/>
+                        <ns2:day_restrictions closedToBook="false" departure="true" arrival="true"/>
+                        <ns2:cultswitch message="InventoryValidityAvail/"/>
+                    </ns2:variation>
+                </ns2:date>
+                <ns2:date datevalue="2017-11-26">
+                    <ns2:variation baby="0" child="0" adult="3">
+                        <ns2:price cs_value="117.0" value="117.0" type="PPR"/>
+                        <ns2:count cs_value="3" value="0" type="CPR"/>
+                        <ns2:virtual_availabilities value="3"/>
+                        <ns2:curr value="EUR"/>
+                        <ns2:partsList>
+                            <ns2:board currency="N/A" price="0.00" type="BR"/>
+                        </ns2:partsList>
+                        <ns2:stay max="999" min="4"/>
+                        <ns2:warranty value="CC/DC/Voucher"/>
+                        <ns2:cancellations>
+                            <ns2:cancellation type="BeforeArrival" unit="Day" value="1">
+                                <ns2:cancellation_fee type="FullStay" nights="0" percent="100.0"/>
+                            </ns2:cancellation>
+                        </ns2:cancellations>
+                        <ns2:productCancellations>
+                            <ns2:cancellation type="BeforeArrival" unit="Day" value="1">
+                                <ns2:cancellation_fee type="FullStay" nights="0" percent="100.0"/>
+                            </ns2:cancellation>
+                        </ns2:productCancellations>
+                        <ns2:guaranteed_allotment release_days="0" guaranteed="0"/>
+                        <ns2:arrival value="true"/>
+                        <ns2:departure value="true"/>
+                        <ns2:secured value="true"/>
+                        <ns2:day_restrictions closedToBook="false" departure="true" arrival="true"/>
+                        <ns2:cultswitch message="InventoryValidityAvail/"/>
+                    </ns2:variation>
+                </ns2:date>
+            </ns2:availData>
+        </ns2:salesChannel>
+        <ns2:uuidProduct value="7253-9463-42540-272162-30"/>
+    </ns2:product>
+    <ns2:uuid value="27759-6162-42540-13002-01"/>
+</ns2:setAvailabilitiesRequest>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://xml.apache.org/xml-soap" xmlns:enc="http://www.w3.org/2003/05/soap-encoding" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <env:Body xmlns:rpc="http://www.w3.org/2003/05/soap-rpc">
+        <env:getRateBookingsResponse env:encodingStyle="http://www.w3.org/2003/05/soap-encoding">
+            <rpc:result>getRateBookingsReturn</rpc:result>
+            <getRateBookingsReturn enc:itemType="ns1:Map" enc:arraySize="1" xsi:type="enc:Array">
+                <item xsi:type="ns1:Map">
+                    <item>
+                        <key xsi:type="xsd:string">Number</key>
+                        <value xsi:type="xsd:int">9452613</value>
+                    </item>
+                    <item>
+                        <key xsi:type="xsd:string">BookedAt</key>
+                        <value xsi:type="xsd:string">2016-02-25 20:17:03</value>
+                    </item>
+                    <item>
+                        <key xsi:type="xsd:string">CheckIn</key>
+                        <value xsi:type="xsd:string">2016-08-17</value>
+                    </item>
+                    <item>
+                        <key xsi:type="xsd:string">CheckOut</key>
+                        <value xsi:type="xsd:string">2016-08-21</value>
+                    </item>
+                    <item>
+                        <key xsi:type="xsd:string">Comment</key>
+                        <value xsi:type="xsd:string"></value>
+                    </item>
+                    <item>
+                        <key xsi:type="xsd:string">NumberOfRooms</key>
+                        <value xsi:type="xsd:int">3</value>
+                    </item>
+                    <item>
+                        <key xsi:type="xsd:string">NumberOfTravellers</key>
+                        <value xsi:type="xsd:int">6</value>
+                    </item>
+                    <item>
+                        <key xsi:type="xsd:string">OriginalPriceEUR</key>
+                        <value xsi:type="xsd:string">1560.00</value>
+                    </item>
+                    <item>
+                        <key xsi:type="xsd:string">CurrentPriceEUR</key>
+                        <value xsi:type="xsd:string">0.00</value>
+                    </item>
+                    <item>
+                        <key xsi:type="xsd:string">OriginalPrice</key>
+                        <value xsi:type="xsd:string">1560.00</value>
+                    </item>
+                    <item>
+                        <key xsi:type="xsd:string">CurrentPrice</key>
+                        <value xsi:type="xsd:string">0.00</value>
+                    </item>
+                    <item>
+                        <key xsi:type="xsd:string">Currency</key>
+                        <value xsi:type="xsd:string">EUR</value>
+                    </item>
+                    <item>
+                        <key xsi:type="xsd:string">BookingStatus</key>
+                        <value xsi:type="xsd:string">Cancelled</value>
+                    </item>
+                    <item>
+                        <key xsi:type="xsd:string">ModificationDate</key>
+                        <value xsi:type="xsd:string">2016-05-04 16:01:39</value>
+                    </item>
+                    <item>
+                        <key xsi:type="xsd:string">CommissionEUR</key>
+                        <value xsi:type="xsd:string">0.00</value>
+                    </item>
+                    <item>
+                        <key xsi:type="xsd:string">CommissionPercent</key>
+                        <value xsi:type="xsd:float">15</value>
+                    </item>
+                    <item>
+                        <key xsi:type="xsd:string">RateTypeId</key>
+                        <value xsi:type="xsd:int">13244</value>
+                    </item>
+                    <item>
+                        <key xsi:type="xsd:string">Customer</key>
+                        <value xsi:type="ns1:Map">
+                            <item>
+                                <key xsi:type="xsd:string">Title</key>
+                                <value xsi:type="xsd:string">Mr</value>
+                            </item>
+                            <item>
+                                <key xsi:type="xsd:string">FirstName</key>
+                                <value xsi:type="xsd:string">Daniel</value>
+                            </item>
+                            <item>
+                                <key xsi:type="xsd:string">LastName</key>
+                                <value xsi:type="xsd:string">Hermes</value>
+                            </item>
+                            <item>
+                                <key xsi:type="xsd:string">Email</key>
+                                <value xsi:type="xsd:string">D.hermes1267@web.de</value>
+                            </item>
+                            <item>
+                                <key xsi:type="xsd:string">Phone</key>
+                                <value xsi:type="xsd:string">01719767040</value>
+                            </item>
+                            <item>
+                                <key xsi:type="xsd:string">Street</key>
+                                <value xsi:type="xsd:string">Droste-H�lshofstra�e 3</value>
+                            </item>
+                            <item>
+                                <key xsi:type="xsd:string">Zip</key>
+                                <value xsi:type="xsd:string">48624</value>
+                            </item>
+                            <item>
+                                <key xsi:type="xsd:string">City</key>
+                                <value xsi:type="xsd:string">Sch�ppingen</value>
+                            </item>
+                            <item>
+                                <key xsi:type="xsd:string">Country</key>
+                                <value xsi:type="xsd:string">DE</value>
+                            </item>
+                        </value>
+                    </item>
+                    <item>
+                        <key xsi:type="xsd:string">Travelers</key>
+                        <value enc:itemType="ns1:Map" enc:arraySize="3" xsi:type="enc:Array">
+                            <item xsi:type="ns1:Map">
+                                <item>
+                                    <key xsi:type="xsd:string">Title</key>
+                                    <value xsi:type="xsd:string">Mr</value>
+                                </item>
+                                <item>
+                                    <key xsi:type="xsd:string">FirstName</key>
+                                    <value xsi:type="xsd:string">Daniel</value>
+                                </item>
+                                <item>
+                                    <key xsi:type="xsd:string">LastName</key>
+                                    <value xsi:type="xsd:string">Hermes</value>
+                                </item>
+                            </item>
+                            <item xsi:type="ns1:Map">
+                                <item>
+                                    <key xsi:type="xsd:string">Title</key>
+                                    <value xsi:type="xsd:string">Mr</value>
+                                </item>
+                                <item>
+                                    <key xsi:type="xsd:string">FirstName</key>
+                                    <value xsi:type="xsd:string">Joshua</value>
+                                </item>
+                                <item>
+                                    <key xsi:type="xsd:string">LastName</key>
+                                    <value xsi:type="xsd:string">Starcke</value>
+                                </item>
+                            </item>
+                            <item xsi:type="ns1:Map">
+                                <item>
+                                    <key xsi:type="xsd:string">Title</key>
+                                    <value xsi:type="xsd:string">Mr</value>
+                                </item>
+                                <item>
+                                    <key xsi:type="xsd:string">FirstName</key>
+                                    <value xsi:type="xsd:string">Hendrik</value>
+                                </item>
+                                <item>
+                                    <key xsi:type="xsd:string">LastName</key>
+                                    <value xsi:type="xsd:string">Hermes</value>
+                                </item>
+                            </item>
+                        </value>
+                    </item>
+                    <item>
+                        <key xsi:type="xsd:string">Rooms</key>
+                        <value enc:itemType="ns1:Map" enc:arraySize="3" xsi:type="enc:Array">
+                            <item xsi:type="ns1:Map">
+                                <item>
+                                    <key xsi:type="xsd:string">RoomId</key>
+                                    <value xsi:type="xsd:int">90939</value>
+                                </item>
+                                <item>
+                                    <key xsi:type="xsd:string">Name</key>
+                                    <value xsi:type="xsd:string">Doppel- Zweibettzimmer standard</value>
+                                </item>
+                            </item>
+                            <item xsi:type="ns1:Map">
+                                <item>
+                                    <key xsi:type="xsd:string">RoomId</key>
+                                    <value xsi:type="xsd:int">90939</value>
+                                </item>
+                                <item>
+                                    <key xsi:type="xsd:string">Name</key>
+                                    <value xsi:type="xsd:string">Doppel- Zweibettzimmer standard</value>
+                                </item>
+                            </item>
+                            <item xsi:type="ns1:Map">
+                                <item>
+                                    <key xsi:type="xsd:string">RoomId</key>
+                                    <value xsi:type="xsd:int">90939</value>
+                                </item>
+                                <item>
+                                    <key xsi:type="xsd:string">Name</key>
+                                    <value xsi:type="xsd:string">Doppel- Zweibettzimmer standard</value>
+                                </item>
+                            </item>
+                        </value>
+                    </item>
+                    <item>
+                        <key xsi:type="xsd:string">Payment</key>
+                        <value xsi:type="ns1:Map">
+                            <item>
+                                <key xsi:type="xsd:string">Type</key>
+                                <value xsi:type="xsd:string">PayedToUnister</value>
+                            </item>
+                        </value>
+                    </item>
+                    <item>
+                        <key xsi:type="xsd:string">BookingSource</key>
+                        <value xsi:type="xsd:string">hotelresevierung.de</value>
+                    </item>
+                </item>
+            </getRateBookingsReturn>
+        </env:getRateBookingsResponse>
+    </env:Body>
+</env:Envelope>
+

@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:p1="http://webservices.interhome.com/PushSvc" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="PushSvcIn" targetNamespace="http://webservices.interhome.com/PushSvc">
+   <wsdl:documentation />
+   <wsp:UsingPolicy wsdl:required="true" />
+   <wsp:Policy wsu:Id="OP_GetReservationDetail" />
+   <wsp:Policy wsu:Id="OP_UpdateVacancy" />
+   <wsp:Policy wsu:Id="OP_SavePricePeriod" />
+   <wsp:Policy wsu:Id="OP_UpdatePrice" />
+   <wsp:Policy wsu:Id="OP_GetReservationList" />
+   <wsp:Policy wsu:Id="OP_GetAvailabilities" />
+   <wsp:Policy wsu:Id="OP_GetAccommodationList" />
+   <wsp:Policy wsu:Id="OP_GetPricePeriod" />
+   <wsdl:types>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+         <xsd:element name="SavePricePeriodRequest">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="Header" type="HeaderType" form="qualified" />
+                  <xsd:element name="Accommodation" form="qualified">
+                     <xsd:complexType>
+                        <xsd:sequence>
+                           <xsd:element name="AccommodationKey" type="ZINREF" minOccurs="0" form="qualified" />
+                           <xsd:element name="ExternalReferenz" type="ZIOLDNREF" minOccurs="0" form="qualified" />
+                        </xsd:sequence>
+                     </xsd:complexType>
+                  </xsd:element>
+                  <xsd:element name="SeasonsAndPrices" type="Seasons" form="qualified" />
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="UpdateVacancyResponse">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="Status" type="StatusType" form="qualified" />
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="SavePricePeriodResponse">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="Status" type="StatusType" form="qualified" />
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="GetReservationListRequest">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="Header" type="HeaderType" form="qualified" />
+                  <xsd:element name="Filter" minOccurs="0" form="qualified">
+                     <xsd:complexType>
+                        <xsd:sequence>
+                           <xsd:element name="LastChanged" type="ZIUPDATEDATE" minOccurs="0" form="qualified" />
+                           <xsd:element name="ExcludeCancellations" type="EXCLUDECANCEL" minOccurs="0" form="qualified" />
+                           <xsd:element name="AccommodationLists" type="AccommodationListFilter" minOccurs="0" form="qualified" />
+                        </xsd:sequence>
+                     </xsd:complexType>
+                  </xsd:element>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="GetAvailabilitiesResponse">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="Status" type="StatusType" form="qualified" />
+                  <xsd:element name="Availabilities" type="Availabilities" minOccurs="0" form="qualified" />
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="GetReservationListResponse">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="Status" type="StatusType" form="qualified" />
+                  <xsd:element name="Reservations" type="ReservationArrayType" minOccurs="0" form="qualified" />
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="GetPricePeriodRequest">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="Header" type="HeaderType" form="qualified" />
+                  <xsd:element name="Accommodation" form="qualified">
+                     <xsd:complexType>
+                        <xsd:sequence>
+                           <xsd:element name="AccommodationKey" type="ZINREF" minOccurs="0" form="qualified" />
+                           <xsd:element name="ExternalReferenz" type="ZIOLDNREF" minOccurs="0" form="qualified" />
+                        </xsd:sequence>
+                     </xsd:complexType>
+                  </xsd:element>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="GetReservationDetailRequest">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="Header" type="HeaderType" form="qualified" />
+                  <xsd:element name="Reservation" form="qualified">
+                     <xsd:complexType>
+                        <xsd:sequence>
+                           <xsd:element name="AccommodationKey" type="ZINREF" minOccurs="0" form="qualified" />
+                           <xsd:element name="ExternalReferenz" type="ZIOLDNREF" minOccurs="0" form="qualified" />
+                           <xsd:element name="ReservationCode" type="ZIRESNRDIS" form="qualified" />
+                        </xsd:sequence>
+                     </xsd:complexType>
+                  </xsd:element>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="UpdatePriceResponse">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="Status" type="StatusType" form="qualified" />
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="UpdateVacancyRequest">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="Header" type="HeaderType" form="qualified" />
+                  <xsd:element name="Accommodation" form="qualified">
+                     <xsd:complexType>
+                        <xsd:sequence>
+                           <xsd:element name="AccommodationKey" type="ZINREF" minOccurs="0" form="qualified" />
+                           <xsd:element name="ExternalReferenz" type="ZIOLDNREF" minOccurs="0" form="qualified" />
+                        </xsd:sequence>
+                     </xsd:complexType>
+                  </xsd:element>
+                  <xsd:element name="VacancyPeriods" type="VacancyPeriods" form="qualified" />
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="GetAccommodationListResponse">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="Status" type="StatusType" form="qualified" />
+                  <xsd:element name="Accommodations" type="Accommodation" minOccurs="0" form="qualified" />
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="GetAvailabilitiesRequest">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="Header" type="HeaderType" form="qualified" />
+                  <xsd:element name="Accommodation" form="qualified">
+                     <xsd:complexType>
+                        <xsd:sequence>
+                           <xsd:element name="AccommodationKey" type="ZINREF" minOccurs="0" form="qualified" />
+                           <xsd:element name="ExternalReferenz" type="ZIOLDNREF" minOccurs="0" form="qualified" />
+                        </xsd:sequence>
+                     </xsd:complexType>
+                  </xsd:element>
+                  <xsd:element name="Timespan" type="Timespan" minOccurs="0" form="qualified" />
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="GetPricePeriodResponse">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="Status" type="StatusType" form="qualified" />
+                  <xsd:element name="SeasonsAndPrices" type="Seasons" minOccurs="0" form="qualified" />
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="GetReservationDetailResponse">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="Status" type="StatusType" form="qualified" />
+                  <xsd:element name="Reservation" type="ReservationType" minOccurs="0" form="qualified" />
+                  <xsd:element name="Pax" type="PaxType" minOccurs="0" form="qualified" />
+                  <xsd:element name="Customer" type="CustomerType" minOccurs="0" form="qualified" />
+                  <xsd:element name="ArrivalInfo" type="ArrivalInfoType" minOccurs="0" form="qualified" />
+                  <xsd:element name="AdditionalServices" type="AdditionalServicesType" minOccurs="0" form="qualified" />
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="UpdatePriceRequest">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="Header" type="HeaderType" form="qualified" />
+                  <xsd:element name="Accommodation" form="qualified">
+                     <xsd:complexType>
+                        <xsd:sequence>
+                           <xsd:element name="AccommodationKey" type="ZINREF" minOccurs="0" form="qualified" />
+                           <xsd:element name="ExternalReferenz" type="ZIOLDNREF" minOccurs="0" form="qualified" />
+                        </xsd:sequence>
+                     </xsd:complexType>
+                  </xsd:element>
+                  <xsd:element name="PricePeriods" type="PricePeriods" form="qualified" />
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="GetAccommodationListRequest">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="Header" type="HeaderType" form="qualified" />
+                  <xsd:element name="Accommodation" minOccurs="0" form="qualified">
+                     <xsd:complexType>
+                        <xsd:sequence>
+                           <xsd:element name="AccommodationKey" type="ZINREF" minOccurs="0" form="qualified" />
+                           <xsd:element name="ExternalReferenz" type="ZIOLDNREF" minOccurs="0" form="qualified" />
+                        </xsd:sequence>
+                     </xsd:complexType>
+                  </xsd:element>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:simpleType name="ZIFIRSTNAME">
+            <xsd:restriction base="xsd:normalizedString">
+               <xsd:maxLength value="50" />
+            </xsd:restriction>
+         </xsd:simpleType>
+         <xsd:simpleType name="ZIINSERTDATE">
+            <xsd:restriction base="xsd:date" />
+         </xsd:simpleType>
+         <xsd:simpleType name="ZIOLDNREF">
+            <xsd:annotation>
+               <xsd:documentation>
+               Partner Referenz des Objektes
+               </xsd:documentation>
+            </xsd:annotation>
+            <xsd:restriction base="xsd:normalizedString">
+               <xsd:maxLength value="40" />
+            </xsd:restriction>
+         </xsd:simpleType>
+         <xsd:simpleType name="ZICHILD">
+            <xsd:restriction base="xsd:integer" />
+         </xsd:simpleType>
+         <xsd:simpleType name="ZICAPSTA">
+            <xsd:annotation>
+               <xsd:documentation>
+               &apos;R&apos; = Nicht Buchbahr / &apos;F&apos; = Buchbar
+               </xsd:documentation>
+            </xsd:annotation>
+            <xsd:restriction base="xsd:normalizedString">
+               <xsd:length value="1" />
+            </xsd:restriction>
+         </xsd:simpleType>
+         <xsd:simpleType name="ZICOFB">
+            <xsd:annotation>
+               <xsd:documentation>
+               X = Flex Booking allowed
+               </xsd:documentation>
+            </xsd:annotation>
+            <xsd:restriction base="xsd:normalizedString">
+               <xsd:length value="1" />
+            </xsd:restriction>
+         </xsd:simpleType>
+         <xsd:simpleType name="ZIUPDATEDATE">
+            <xsd:restriction base="xsd:date" />
+         </xsd:simpleType>
+         <xsd:simpleType name="ZIPERCO">
+            <xsd:annotation>
+               <xsd:documentation>
+               S, H, U, M, L
+               </xsd:documentation>
+            </xsd:annotation>
+            <xsd:restriction base="xsd:normalizedString">
+               <xsd:length value="1" />
+            </xsd:restriction>
+         </xsd:simpleType>
+         <xsd:simpleType name="ZILANG">
+            <xsd:restriction base="xsd:normalizedString">
+               <xsd:maxLength value="2" />
+            </xsd:restriction>
+         </xsd:simpleType>
+         <xsd:simpleType name="ZISUPPLIKEY">
+            <xsd:restriction base="xsd:normalizedString">
+               <xsd:minLength value="3" />
+               <xsd:maxLength value="8" />
+            </xsd:restriction>
+         </xsd:simpleType>
+         <xsd:simpleType name="ZIVACDATE">
+            <xsd:restriction base="xsd:date" />
+         </xsd:simpleType>
+         <xsd:simpleType name="ZIARRTEXT">
+            <xsd:restriction base="xsd:normalizedString">
+               <xsd:maxLength value="20" />
+            </xsd:restriction>
+         </xsd:simpleType>
+         <xsd:simpleType name="ZIRESENDDATE">
+            <xsd:restriction base="xsd:date" />
+         </xsd:simpleType>
+         <xsd:simpleType name="ZISVCDESC">
+            <xsd:restriction base="xsd:normalizedString">
+               <xsd:maxLength value="80" />
+            </xsd:restriction>
+         </xsd:simpleType>
+         <xsd:simpleType name="ZIRESNRDIS">
+            <xsd:annotation>
+               <xsd:documentation>
+               Reservationsnummer in Displayformat
+               </xsd:documentation>
+            </xsd:annotation>
+            <xsd:restriction base="xsd:normalizedString">
+               <xsd:maxLength value="12" />
+            </xsd:restriction>
+         </xsd:simpleType>
+         <xsd:simpleType name="ZIDUR">
+            <xsd:restriction base="xsd:integer" />
+         </xsd:simpleType>
+         <xsd:simpleType name="ZIDOMCURR">
+            <xsd:annotation>
+               <xsd:documentation>
+               Währung in welcher das Objekt original Verkauft wird
+               </xsd:documentation>
+            </xsd:annotation>
+            <xsd:restriction base="xsd:normalizedString">
+               <xsd:maxLength value="3" />
+               <xsd:minLength value="1" />
+            </xsd:restriction>
+         </xsd:simpleType>
+         <xsd:simpleType name="ZIBABY">
+            <xsd:restriction base="xsd:integer" />
+         </xsd:simpleType>
+         <xsd:simpleType name="ZIPERIODFROM">
+            <xsd:restriction base="xsd:date" />
+         </xsd:simpleType>
+         <xsd:simpleType name="ZIPHONE">
+            <xsd:restriction base="xsd:normalizedString">
+               <xsd:maxLength value="40" />
+            </xsd:restriction>
+         </xsd:simpleType>
+         <xsd:simpleType name="ZINREF">
+            <xsd:restriction base="xsd:normalizedString" />
+         </xsd:simpleType>
+         <xsd:simpleType name="ZIMINSTAY">
+            <xsd:restriction base="xsd:normalizedString">
+               <xsd:maxLength value="3" />
+            </xsd:restriction>
+         </xsd:simpleType>
+         <xsd:simpleType name="ZISALRENT">
+            <xsd:annotation>
+               <xsd:documentation>
+               Preis zu welchem vermietet wird inkl. Nachkommastellen der Währung zB.: 150.00
+               </xsd:documentation>
+            </xsd:annotation>
+            <xsd:restriction base="xsd:normalizedString">
+               <xsd:maxLength value="20" />
+               <xsd:minLength value="4" />
+            </xsd:restriction>
+         </xsd:simpleType>
+         <xsd:simpleType name="ZIADULT">
+            <xsd:restriction base="xsd:integer" />
+         </xsd:simpleType>
+         <xsd:simpleType name="ZIARRDAY">
+            <xsd:annotation>
+               <xsd:documentation>
+               Arrival Day 2 (Tuesday)
+               </xsd:documentation>
+            </xsd:annotation>
+            <xsd:restriction base="xsd:normalizedString">
+               <xsd:length value="1" />
+            </xsd:restriction>
+         </xsd:simpleType>
+         <xsd:simpleType name="ZISALUTATION">
+            <xsd:restriction base="xsd:integer" />
+         </xsd:simpleType>
+         <xsd:simpleType name="ZICOUNTRY">
+            <xsd:restriction base="xsd:normalizedString">
+               <xsd:maxLength value="2" />
+            </xsd:restriction>
+         </xsd:simpleType>
+         <xsd:simpleType name="ZIBOOKSTA">
+            <xsd:annotation>
+               <xsd:documentation>
+               Buchungsstatus: OK - Confirmed booking / OP - Provisional booking / CA - Cancelled booking / XX - Cancelled booking without fees / RQ - Booking on Request / ST - Internal Status / WW - Web booking unconfirmed / OB - Owners booking / HC - House closing
+               </xsd:documentation>
+            </xsd:annotation>
+            <xsd:restriction base="xsd:normalizedString">
+               <xsd:maxLength value="2" />
+            </xsd:restriction>
+         </xsd:simpleType>
+         <xsd:simpleType name="EXCLUDECANCEL">
+            <xsd:annotation>
+               <xsd:documentation>
+               X = Cancellations excluded
+               </xsd:documentation>
+            </xsd:annotation>
+            <xsd:restriction base="xsd:normalizedString">
+               <xsd:length value="1" />
+            </xsd:restriction>
+         </xsd:simpleType>
+         <xsd:simpleType name="ZIEMAIL">
+            <xsd:restriction base="xsd:normalizedString">
+               <xsd:maxLength value="50" />
+            </xsd:restriction>
+         </xsd:simpleType>
+         <xsd:simpleType name="ZISVCCODE">
+            <xsd:restriction base="xsd:normalizedString">
+               <xsd:maxLength value="4" />
+            </xsd:restriction>
+         </xsd:simpleType>
+         <xsd:simpleType name="ZINAME">
+            <xsd:restriction base="xsd:normalizedString">
+               <xsd:maxLength value="50" />
+            </xsd:restriction>
+         </xsd:simpleType>
+         <xsd:simpleType name="ZIARRTIME">
+            <xsd:restriction base="xsd:normalizedString">
+               <xsd:maxLength value="20" />
+            </xsd:restriction>
+         </xsd:simpleType>
+         <xsd:simpleType name="ZIPERIODTO">
+            <xsd:restriction base="xsd:date" />
+         </xsd:simpleType>
+         <xsd:simpleType name="ZIARRDATE">
+            <xsd:restriction base="xsd:date" />
+         </xsd:simpleType>
+         <xsd:simpleType name="ZIRESBEGDATE">
+            <xsd:restriction base="xsd:date" />
+         </xsd:simpleType>
+         <xsd:complexType name="CustomerType">
+            <xsd:sequence>
+               <xsd:element name="CustomerSalutationCode" type="ZISALUTATION" form="qualified" />
+               <xsd:element name="CustomerName" type="ZINAME" form="qualified" />
+               <xsd:element name="CustomerFirstName" type="ZIFIRSTNAME" minOccurs="0" form="qualified" />
+               <xsd:element name="CustomerCountryCode" type="ZICOUNTRY" form="qualified" />
+               <xsd:element name="CustomerPhone" type="ZIPHONE" minOccurs="0" form="qualified" />
+               <xsd:element name="CustomerEmail" type="ZIEMAIL" minOccurs="0" form="qualified" />
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="ReservationType">
+            <xsd:sequence>
+               <xsd:element name="AccommodationKey" type="ZINREF" form="qualified" />
+               <xsd:element name="ExternalReferenz" type="ZIOLDNREF" minOccurs="0" form="qualified" />
+               <xsd:element name="ReservationCode" type="ZIRESNRDIS" form="qualified" />
+               <xsd:element name="ReservationStatus" type="ZIBOOKSTA" form="qualified" />
+               <xsd:element name="CheckIn" type="ZIRESBEGDATE" form="qualified" />
+               <xsd:element name="CheckOut" type="ZIRESENDDATE" form="qualified" />
+               <xsd:element name="Duration" type="ZIDUR" form="qualified" />
+               <xsd:element name="LanguageCode" type="ZILANG" form="qualified" />
+               <xsd:element name="InsertDate" type="ZIINSERTDATE" form="qualified" />
+               <xsd:element name="UpdateDate" type="ZIUPDATEDATE" minOccurs="0" form="qualified" />
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="Accommodation">
+            <xsd:annotation>
+               <xsd:documentation>
+               Auflistung aller Accommodations
+               </xsd:documentation>
+            </xsd:annotation>
+            <xsd:sequence>
+               <xsd:element name="Accommodation" minOccurs="0" maxOccurs="unbounded" form="qualified">
+                  <xsd:complexType>
+                     <xsd:sequence>
+                        <xsd:element name="AccommodationKey" type="ZINREF" minOccurs="0" form="qualified" />
+                        <xsd:element name="ExternalReferenz" type="ZIOLDNREF" minOccurs="0" form="qualified" />
+                     </xsd:sequence>
+                  </xsd:complexType>
+               </xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="AdditionalServicesType">
+            <xsd:sequence>
+               <xsd:element name="AdditionalServices" type="AdditionalServiceType" minOccurs="0" maxOccurs="unbounded" form="qualified" />
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="Seasons">
+            <xsd:sequence>
+               <xsd:element name="SeasonAndPrice" type="Season" minOccurs="0" maxOccurs="unbounded" form="qualified" />
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="AdditionalServiceType">
+            <xsd:sequence>
+               <xsd:element name="LanguageCode" type="ZILANG" form="qualified" />
+               <xsd:element name="AdditionalServiceCode" type="ZISVCCODE" form="qualified" />
+               <xsd:element name="AdditionalServiceDescription" type="ZISVCDESC" form="qualified" />
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="StatusType">
+            <xsd:sequence>
+               <xsd:element name="StatusItem" minOccurs="0" maxOccurs="unbounded" form="qualified">
+                  <xsd:complexType>
+                     <xsd:sequence>
+                        <xsd:element name="ErrorCode" type="xsd:normalizedString" minOccurs="0" form="qualified" />
+                        <xsd:element name="ErrorMessage" type="xsd:normalizedString" minOccurs="0" form="qualified" />
+                        <xsd:element name="SystemError" minOccurs="0" form="qualified">
+                           <xsd:simpleType>
+                              <xsd:restriction base="xsd:normalizedString">
+                                 <xsd:length value="1" />
+                              </xsd:restriction>
+                           </xsd:simpleType>
+                        </xsd:element>
+                     </xsd:sequence>
+                  </xsd:complexType>
+               </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="Result" type="xsd:boolean" use="required" />
+         </xsd:complexType>
+         <xsd:complexType name="VacancyPeriod">
+            <xsd:sequence>
+               <xsd:element name="SeasonFrom" type="ZIPERIODFROM" form="qualified" />
+               <xsd:element name="SeasonTo" type="ZIPERIODTO" form="qualified" />
+               <xsd:element name="CapacityStatus" type="ZICAPSTA" form="qualified" />
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="VacancyPeriods">
+            <xsd:sequence>
+               <xsd:element name="VacancyPeriod" type="VacancyPeriod" minOccurs="0" maxOccurs="unbounded" form="qualified" />
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="Availabilities">
+            <xsd:sequence>
+               <xsd:element name="Availability" type="Availability" minOccurs="0" maxOccurs="unbounded" form="qualified" />
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="PricePeriods">
+            <xsd:sequence>
+               <xsd:element name="PricePeriod" type="PricePeriod" minOccurs="0" maxOccurs="unbounded" form="qualified" />
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="Timespan">
+            <xsd:sequence>
+               <xsd:element name="From" type="ZIPERIODFROM" form="qualified" />
+               <xsd:element name="To" type="ZIPERIODTO" form="qualified" />
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="HeaderType">
+            <xsd:sequence>
+               <xsd:element name="SupplierKey" type="ZISUPPLIKEY" form="qualified" />
+               <xsd:element name="Token" form="qualified">
+                  <xsd:simpleType>
+                     <xsd:restriction base="xsd:normalizedString">
+                        <xsd:length value="10" />
+                     </xsd:restriction>
+                  </xsd:simpleType>
+               </xsd:element>
+               <xsd:element name="Currency" type="ZIDOMCURR" minOccurs="0" form="qualified" />
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="Availability">
+            <xsd:sequence>
+               <xsd:element name="VacancyDate" type="ZIVACDATE" form="qualified" />
+               <xsd:element name="CapacityStatus" type="ZICAPSTA" form="qualified" />
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="PricePeriod">
+            <xsd:sequence>
+               <xsd:element name="SeasonFrom" type="ZIPERIODFROM" form="qualified" />
+               <xsd:element name="SeasonTo" type="ZIPERIODTO" form="qualified" />
+               <xsd:element name="Currency" type="ZIDOMCURR" form="qualified" />
+               <xsd:element name="Price" type="ZISALRENT" form="qualified" />
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="PaxType">
+            <xsd:sequence>
+               <xsd:element name="Adults" type="ZIADULT" form="qualified" />
+               <xsd:element name="Children" type="ZICHILD" form="qualified" />
+               <xsd:element name="Babies" type="ZIBABY" form="qualified" />
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="ArrivalInfoType">
+            <xsd:sequence>
+               <xsd:element name="ExpectedArrivalDate" type="ZIARRDATE" minOccurs="0" form="qualified" />
+               <xsd:element name="ExpectedArrivalTime" type="ZIARRTIME" minOccurs="0" form="qualified" />
+               <xsd:element name="AdditionalArrivalInfo" type="ZIARRTEXT" minOccurs="0" form="qualified" />
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="AccommodationListFilter">
+            <xsd:sequence>
+               <xsd:element name="AccommodationList" minOccurs="0" maxOccurs="unbounded" form="qualified">
+                  <xsd:complexType>
+                     <xsd:sequence>
+                        <xsd:element name="AccommodationKey" type="ZINREF" minOccurs="0" form="qualified" />
+                        <xsd:element name="ExternalReferenz" type="ZIOLDNREF" minOccurs="0" form="qualified" />
+                     </xsd:sequence>
+                  </xsd:complexType>
+               </xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="Season">
+            <xsd:sequence>
+               <xsd:element name="SeasonCode" type="ZIPERCO" form="qualified" />
+               <xsd:element name="SeasonFrom" type="ZIPERIODFROM" form="qualified" />
+               <xsd:element name="SeasonTo" type="ZIPERIODTO" form="qualified" />
+               <xsd:element name="Currency" type="ZIDOMCURR" form="qualified" />
+               <xsd:element name="Price" type="ZISALRENT" form="qualified" />
+               <xsd:element name="MinimumStay" type="ZIMINSTAY" form="qualified" />
+               <xsd:element name="Monday" type="ZIARRDAY" form="qualified" />
+               <xsd:element name="Tuesday" type="ZIARRDAY" form="qualified" />
+               <xsd:element name="Wednesday" type="ZIARRDAY" form="qualified" />
+               <xsd:element name="Thursday" type="ZIARRDAY" form="qualified" />
+               <xsd:element name="Friday" type="ZIARRDAY" form="qualified" />
+               <xsd:element name="Saturday" type="ZIARRDAY" form="qualified" />
+               <xsd:element name="Sunday" type="ZIARRDAY" form="qualified" />
+               <xsd:element name="FlexBooking" type="ZICOFB" minOccurs="0" form="qualified" />
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="ReservationArrayType">
+            <xsd:sequence>
+               <xsd:element name="Reservation" type="ReservationType" minOccurs="0" maxOccurs="unbounded" form="qualified" />
+            </xsd:sequence>
+         </xsd:complexType>
+      </xsd:schema>
+   </wsdl:types>
+   <wsdl:message name="xmln.GetReservationDetailRequest">
+      <wsdl:documentation />
+      <wsdl:part xmlns="" name="GetReservationDetailRequest" element="GetReservationDetailRequest" />
+   </wsdl:message>
+   <wsdl:message name="xmln.GetReservationDetailResponse">
+      <wsdl:documentation />
+      <wsdl:part xmlns="" name="GetReservationDetailResponse" element="GetReservationDetailResponse" />
+   </wsdl:message>
+   <wsdl:message name="xmln.UpdateVacancyRequest">
+      <wsdl:documentation />
+      <wsdl:part xmlns="" name="UpdateVacancyRequest" element="UpdateVacancyRequest" />
+   </wsdl:message>
+   <wsdl:message name="xmln.UpdateVacancyResponse">
+      <wsdl:documentation />
+      <wsdl:part xmlns="" name="UpdateVacancyResponse" element="UpdateVacancyResponse" />
+   </wsdl:message>
+   <wsdl:message name="xmln.SavePricePeriodRequest">
+      <wsdl:documentation />
+      <wsdl:part xmlns="" name="SavePricePeriodRequest" element="SavePricePeriodRequest" />
+   </wsdl:message>
+   <wsdl:message name="xmln.SavePricePeriodResponse">
+      <wsdl:documentation />
+      <wsdl:part xmlns="" name="SavePricePeriodResponse" element="SavePricePeriodResponse" />
+   </wsdl:message>
+   <wsdl:message name="xmln.UpdatePriceRequest">
+      <wsdl:documentation />
+      <wsdl:part xmlns="" name="UpdatePriceRequest" element="UpdatePriceRequest" />
+   </wsdl:message>
+   <wsdl:message name="xmln.UpdatePriceResponse">
+      <wsdl:documentation />
+      <wsdl:part xmlns="" name="UpdatePriceResponse" element="UpdatePriceResponse" />
+   </wsdl:message>
+   <wsdl:message name="xmln.GetReservationListRequest">
+      <wsdl:documentation />
+      <wsdl:part xmlns="" name="GetReservationListRequest" element="GetReservationListRequest" />
+   </wsdl:message>
+   <wsdl:message name="xmln.GetReservationListResponse">
+      <wsdl:documentation />
+      <wsdl:part xmlns="" name="GetReservationListResponse" element="GetReservationListResponse" />
+   </wsdl:message>
+   <wsdl:message name="xmln.GetAvailabilitiesRequest">
+      <wsdl:documentation />
+      <wsdl:part xmlns="" name="GetAvailabilitiesRequest" element="GetAvailabilitiesRequest" />
+   </wsdl:message>
+   <wsdl:message name="xmln.GetAvailabilitiesResponse">
+      <wsdl:documentation />
+      <wsdl:part xmlns="" name="GetAvailabilitiesResponse" element="GetAvailabilitiesResponse" />
+   </wsdl:message>
+   <wsdl:message name="xmln.GetAccommodationListRequest">
+      <wsdl:documentation />
+      <wsdl:part xmlns="" name="GetAccommodationListRequest" element="GetAccommodationListRequest" />
+   </wsdl:message>
+   <wsdl:message name="xmln.GetAccommodationListResponse">
+      <wsdl:documentation />
+      <wsdl:part xmlns="" name="GetAccommodationListResponse" element="GetAccommodationListResponse" />
+   </wsdl:message>
+   <wsdl:message name="xmln.GetPricePeriodRequest">
+      <wsdl:documentation />
+      <wsdl:part xmlns="" name="GetPricePeriodRequest" element="GetPricePeriodRequest" />
+   </wsdl:message>
+   <wsdl:message name="xmln.GetPricePeriodResponse">
+      <wsdl:documentation />
+      <wsdl:part xmlns="" name="GetPricePeriodResponse" element="GetPricePeriodResponse" />
+   </wsdl:message>
+   <wsdl:portType name="PushSvcIn">
+      <wsdl:documentation />
+      <wsdl:operation name="GetReservationDetail">
+         <wsdl:documentation />
+         <wsp:Policy>
+            <wsp:PolicyReference URI="#OP_GetReservationDetail" />
+         </wsp:Policy>
+         <wsdl:input message="p1:xmln.GetReservationDetailRequest" />
+         <wsdl:output message="p1:xmln.GetReservationDetailResponse" />
+      </wsdl:operation>
+      <wsdl:operation name="UpdateVacancy">
+         <wsdl:documentation />
+         <wsp:Policy>
+            <wsp:PolicyReference URI="#OP_UpdateVacancy" />
+         </wsp:Policy>
+         <wsdl:input message="p1:xmln.UpdateVacancyRequest" />
+         <wsdl:output message="p1:xmln.UpdateVacancyResponse" />
+      </wsdl:operation>
+      <wsdl:operation name="SavePricePeriod">
+         <wsdl:documentation />
+         <wsp:Policy>
+            <wsp:PolicyReference URI="#OP_SavePricePeriod" />
+         </wsp:Policy>
+         <wsdl:input message="p1:xmln.SavePricePeriodRequest" />
+         <wsdl:output message="p1:xmln.SavePricePeriodResponse" />
+      </wsdl:operation>
+      <wsdl:operation name="UpdatePrice">
+         <wsdl:documentation />
+         <wsp:Policy>
+            <wsp:PolicyReference URI="#OP_UpdatePrice" />
+         </wsp:Policy>
+         <wsdl:input message="p1:xmln.UpdatePriceRequest" />
+         <wsdl:output message="p1:xmln.UpdatePriceResponse" />
+      </wsdl:operation>
+      <wsdl:operation name="GetReservationList">
+         <wsdl:documentation />
+         <wsp:Policy>
+            <wsp:PolicyReference URI="#OP_GetReservationList" />
+         </wsp:Policy>
+         <wsdl:input message="p1:xmln.GetReservationListRequest" />
+         <wsdl:output message="p1:xmln.GetReservationListResponse" />
+      </wsdl:operation>
+      <wsdl:operation name="GetAvailabilities">
+         <wsdl:documentation />
+         <wsp:Policy>
+            <wsp:PolicyReference URI="#OP_GetAvailabilities" />
+         </wsp:Policy>
+         <wsdl:input message="p1:xmln.GetAvailabilitiesRequest" />
+         <wsdl:output message="p1:xmln.GetAvailabilitiesResponse" />
+      </wsdl:operation>
+      <wsdl:operation name="GetAccommodationList">
+         <wsdl:documentation />
+         <wsp:Policy>
+            <wsp:PolicyReference URI="#OP_GetAccommodationList" />
+         </wsp:Policy>
+         <wsdl:input message="p1:xmln.GetAccommodationListRequest" />
+         <wsdl:output message="p1:xmln.GetAccommodationListResponse" />
+      </wsdl:operation>
+      <wsdl:operation name="GetPricePeriod">
+         <wsdl:documentation />
+         <wsp:Policy>
+            <wsp:PolicyReference URI="#OP_GetPricePeriod" />
+         </wsp:Policy>
+         <wsdl:input message="p1:xmln.GetPricePeriodRequest" />
+         <wsdl:output message="p1:xmln.GetPricePeriodResponse" />
+      </wsdl:operation>
+   </wsdl:portType>
+   <wsdl:binding name="PushSvcInBinding" type="p1:PushSvcIn">
+      <soap:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+      <wsdl:operation name="GetReservationDetail">
+         <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1" />
+         <wsdl:input>
+            <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal" />
+         </wsdl:input>
+         <wsdl:output>
+            <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal" />
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="UpdateVacancy">
+         <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1" />
+         <wsdl:input>
+            <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal" />
+         </wsdl:input>
+         <wsdl:output>
+            <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal" />
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="UpdatePrice">
+         <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1" />
+         <wsdl:input>
+            <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal" />
+         </wsdl:input>
+         <wsdl:output>
+            <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal" />
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="SavePricePeriod">
+         <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1" />
+         <wsdl:input>
+            <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal" />
+         </wsdl:input>
+         <wsdl:output>
+            <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal" />
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="GetReservationList">
+         <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1" />
+         <wsdl:input>
+            <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal" />
+         </wsdl:input>
+         <wsdl:output>
+            <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal" />
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="GetAvailabilities">
+         <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1" />
+         <wsdl:input>
+            <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal" />
+         </wsdl:input>
+         <wsdl:output>
+            <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal" />
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="GetAccommodationList">
+         <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1" />
+         <wsdl:input>
+            <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal" />
+         </wsdl:input>
+         <wsdl:output>
+            <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal" />
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="GetPricePeriod">
+         <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1" />
+         <wsdl:input>
+            <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal" />
+         </wsdl:input>
+         <wsdl:output>
+            <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal" />
+         </wsdl:output>
+      </wsdl:operation>
+   </wsdl:binding>
+	<wsdl:service name="NewService">
+		<wsdl:port name="Developer_Port" binding="p1:PushSvcInBinding">
+			<soap:address location="https://ws.interhome.com/dev/irent/pushsvc/v1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+		</wsdl:port>
+		<wsdl:port name="Quality_Port" binding="p1:PushSvcInBinding">
+			<soap:address location="https://ws.interhome.com/test/irent/pushsvc/v1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+		</wsdl:port>
+		<wsdl:port name="Productive_Port" binding="p1:PushSvcInBinding">
+			<soap:address location="https://ws.interhome.com/irent/pushsvc/v1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+		</wsdl:port>
+		<wsdl:port name="Developer_Port_internal" binding="p1:PushSvcInBinding">
+			<soap:address location="http://ch01s590.hotelplan.net:7081/sap/bc/srt/xip/sap/zpushsvcin/051/pushsvc/pushsvc" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+		</wsdl:port>
+		<wsdl:port name="Quality_Port_internal" binding="p1:PushSvcInBinding">
+			<soap:address location="http://ch01s591.hotelplan.net:7083/sap/bc/srt/xip/sap/zpushsvcin/051/pushsvc/pushsvc" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+		</wsdl:port>
+		<wsdl:port name="Productive_Port_internal" binding="p1:PushSvcInBinding">
+			<soap:address location="http://ch01s520.hotelplan.net:7081/sap/bc/srt/xip/sap/zpushsvcin/051/pushsvc/pushsvc" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

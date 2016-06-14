@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OTA_HotelAvailRS PrimaryLangID="de" Target="Production"
+    TimeStamp="2016-04-27T09:49:24"
+    TransactionIdentifier="d29f2023-6e07-40ca-9354-39a0afbac9e7-1075668124"
+    Version="3.20" xmlns="http://www.opentravel.org/OTA/2003/05">
+    <Success/>
+    <RoomStays>
+        <RoomStay>
+            <RoomTypes>
+                <RoomType RoomTypeCode="94577">
+                    <RoomDescription Name="Vijay pre testing corn job">
+                        <Text><![CDATA[Vijay pre testing corn job
+Vijay pre testing corn job]]></Text>
+                    </RoomDescription>
+                    <AdditionalDetails>
+                        <AdditionalDetail Code="7" Type="4"/>
+                    </AdditionalDetails>
+                </RoomType>
+                <RoomType IsRoom="false" NumberOfUnits="1" RoomTypeCode="PD133609"/>
+            </RoomTypes>
+            <RatePlans>
+                <RatePlan RatePlanID="133609"
+                    RatePlanName="Vijay pre testing corn job" RatePlanType="11">
+                    <Guarantee GuaranteeCode="1" GuaranteeType="None"/>
+                    <AdditionalDetails/>
+                    <RatePlanDescription Name="Vijay pre testing corn job ">
+                        <Text Formatted="true" Language="de"><![CDATA[Vijay pre testing corn job]]></Text>
+                    </RatePlanDescription>
+                    <CancelPenalties/>
+                    <MealsIncluded Breakfast="false"/>
+                </RatePlan>
+            </RatePlans>
+            <RoomRates>
+                <RoomRate NumberOfUnits="1" RatePlanID="133609"
+                    RatePlanType="11" RoomTypeCode="94577"/>
+                <RoomRate RatePlanID="133609" RatePlanType="11" RoomTypeCode="PD133609">
+                    <Rates>
+                        <Rate Duration="1" EffectiveDate="2016-04-27"
+                            GuaranteedInd="true" MaxLOS="1" MinLOS="1" NumberOfUnits="1">
+                            <RateDescription
+                                LastModifyDateTime="2016-01-08T00:00:00" Name="AvailabilityReport">
+                                <ListItem ListItem="1"><![CDATA[InventoryValidityAvail]]></ListItem>
+                                <ListItem ListItem="1"><![CDATA[InventoryNoOfUnitsAvail]]></ListItem>
+                                <ListItem ListItem="1"><![CDATA[InventoryDayPriceAvail]]></ListItem>
+                                <ListItem ListItem="1"><![CDATA[ProductValidityAvail]]></ListItem>
+                                <ListItem ListItem="1"><![CDATA[ProductArrivalDayAvail]]></ListItem>
+                                <ListItem ListItem="1"><![CDATA[ProductDepartureDayAvail]]></ListItem>
+                                <ListItem ListItem="1"><![CDATA[ProductAvailableDayAvail]]></ListItem>
+                                <ListItem ListItem="1"><![CDATA[ProductNonRoomValidity]]></ListItem>
+                            </RateDescription>
+                            <Base AmountAfterTax="1.00" CurrencyCode="EUR"/>
+                            <CancelPolicies/>
+                            <PaymentPolicies>
+                                <GuaranteePayment GuaranteeCode="3"
+                                    GuaranteeType="CC/DC/Voucher" RPH="GuaranteePolicy"/>
+                            </PaymentPolicies>
+                            <TPA_Extensions>
+                                <Descriptions>
+                                    <Description Name="RateDescription">
+                                    <Text Language="EN"><![CDATA[Price breakup description for 1 adult(s)]]></Text>
+                                    <Text Language="EN"><![CDATA[Price is calculated for 1 adult(s)]]></Text>
+                                    <Text Language="EN"><![CDATA[Added Child amount of '0.0' to Total calculated price of '1.0': [ 1.0 ]]]></Text>
+                                    </Description>
+                                </Descriptions>
+                            </TPA_Extensions>
+                        </Rate>
+                        <Rate Duration="1" EffectiveDate="2016-04-28"
+                            GuaranteedInd="true" MaxLOS="1" MinLOS="1" NumberOfUnits="1">
+                            <RateDescription
+                                LastModifyDateTime="2016-01-08T00:00:00" Name="AvailabilityReport">
+                                <ListItem ListItem="1"><![CDATA[InventoryValidityAvail]]></ListItem>
+                                <ListItem ListItem="1"><![CDATA[InventoryNoOfUnitsAvail]]></ListItem>
+                                <ListItem ListItem="1"><![CDATA[InventoryDayPriceAvail]]></ListItem>
+                                <ListItem ListItem="1"><![CDATA[ProductValidityAvail]]></ListItem>
+                                <ListItem ListItem="1"><![CDATA[ProductArrivalDayAvail]]></ListItem>
+                                <ListItem ListItem="1"><![CDATA[ProductDepartureDayAvail]]></ListItem>
+                                <ListItem ListItem="1"><![CDATA[ProductAvailableDayAvail]]></ListItem>
+                                <ListItem ListItem="1"><![CDATA[ProductNonRoomValidity]]></ListItem>
+                            </RateDescription>
+                            <Base AmountAfterTax="1.00" CurrencyCode="EUR"/>
+                            <CancelPolicies/>
+                            <PaymentPolicies>
+                                <GuaranteePayment GuaranteeCode="3"
+                                    GuaranteeType="CC/DC/Voucher" RPH="GuaranteePolicy"/>
+                            </PaymentPolicies>
+                            <TPA_Extensions>
+                                <Descriptions>
+                                    <Description Name="RateDescription">
+                                    <Text Language="EN"><![CDATA[Price breakup description for 1 adult(s)]]></Text>
+                                    <Text Language="EN"><![CDATA[Price is calculated for 1 adult(s)]]></Text>
+                                    <Text Language="EN"><![CDATA[Added Child amount of '0.0' to Total calculated price of '1.0': [ 1.0 ]]]></Text>
+                                    </Description>
+                                </Descriptions>
+                            </TPA_Extensions>
+                        </Rate>
+                        <Rate Duration="1" EffectiveDate="2016-04-29"
+                            GuaranteedInd="true" MaxLOS="1" MinLOS="1" NumberOfUnits="1">
+                            <RateDescription
+                                LastModifyDateTime="2016-01-08T00:00:00" Name="AvailabilityReport">
+                                <ListItem ListItem="1"><![CDATA[InventoryValidityAvail]]></ListItem>
+                                <ListItem ListItem="1"><![CDATA[InventoryNoOfUnitsAvail]]></ListItem>
+                                <ListItem ListItem="1"><![CDATA[InventoryDayPriceAvail]]></ListItem>
+                                <ListItem ListItem="1"><![CDATA[ProductValidityAvail]]></ListItem>
+                                <ListItem ListItem="1"><![CDATA[ProductArrivalDayAvail]]></ListItem>
+                                <ListItem ListItem="1"><![CDATA[ProductDepartureDayAvail]]></ListItem>
+                                <ListItem ListItem="1"><![CDATA[ProductAvailableDayAvail]]></ListItem>
+                                <ListItem ListItem="1"><![CDATA[ProductNonRoomValidity]]></ListItem>
+                            </RateDescription>
+                            <Base AmountAfterTax="1.00" CurrencyCode="EUR"/>
+                            <CancelPolicies/>
+                            <PaymentPolicies>
+                                <GuaranteePayment GuaranteeCode="3"
+                                    GuaranteeType="CC/DC/Voucher" RPH="GuaranteePolicy"/>
+                            </PaymentPolicies>
+                            <TPA_Extensions>
+                                <Descriptions>
+                                    <Description Name="RateDescription">
+                                    <Text Language="EN"><![CDATA[Price breakup description for 1 adult(s)]]></Text>
+                                    <Text Language="EN"><![CDATA[Price is calculated for 1 adult(s)]]></Text>
+                                    <Text Language="EN"><![CDATA[Added Child amount of '0.0' to Total calculated price of '1.0': [ 1.0 ]]]></Text>
+                                    </Description>
+                                </Descriptions>
+                            </TPA_Extensions>
+                        </Rate>
+                    </Rates>
+                </RoomRate>
+            </RoomRates>
+            <GuestCounts>
+                <GuestCount AgeQualifyingCode="10" Count="2"/>
+            </GuestCounts>
+            <TimeSpan End="2016-04-30" Start="2016-04-27"/>
+            <BasicPropertyInfo HotelCode="122" HotelName="Clearingstation vioma Testhotel äÄöüß">
+                <Address FormattedInd="false">
+                    <StreetNmbr><![CDATA[Industriestrasse  äÄöüß]]></StreetNmbr>
+                    <CityName><![CDATA[Offenburg äÄöüß]]></CityName>
+                    <PostalCode><![CDATA[77656]]></PostalCode>
+                    <StateProv><![CDATA[Baden-Württemberg]]></StateProv>
+                    <CountryName Code="de"><![CDATA[Deutschland]]></CountryName>
+                </Address>
+            </BasicPropertyInfo>
+        </RoomStay>
+    </RoomStays>
+    <TPA_Extensions>
+        <ResponseTime ProcessTime="0.11" ProcessTimeUnit="Seconds"
+            RequestStartTime="2016-04-27 09:49:24.048" ResponseEndTime="2016-04-27 09:49:24.158"/>
+    </TPA_Extensions>
+</OTA_HotelAvailRS>

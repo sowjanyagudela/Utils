@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://xml.apache.org/xml-soap" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+    <SOAP-ENV:Body>
+        <SOAP-ENV:getRateBookingsResponse>
+            <getRateBookingsReturn SOAP-ENC:arrayType="ns1:Map[1]" type="SOAP-ENC:Array">
+                <item type="ns1:Map">
+                    <item>
+                        <key type="xsd:string">Number</key>
+                        <value type="xsd:int">9470241</value>
+                    </item>
+                    <item>
+                        <key type="xsd:string">BookedAt</key>
+                        <value type="xsd:string">2016-05-14 08:46:04</value>
+                    </item>
+                    <item>
+                        <key type="xsd:string">CheckIn</key>
+                        <value type="xsd:string">2016-06-17</value>
+                    </item>
+                    <item>
+                        <key type="xsd:string">CheckOut</key>
+                        <value type="xsd:string">2016-06-19</value>
+                    </item>
+                    <item>
+                        <key type="xsd:string">Comment</key>
+                        <value type="xsd:string"></value>
+                    </item>
+                    <item>
+                        <key type="xsd:string">NumberOfRooms</key>
+                        <value type="xsd:int">1</value>
+                    </item>
+                    <item>
+                        <key type="xsd:string">NumberOfTravellers</key>
+                        <value type="xsd:int">2</value>
+                    </item>
+                    <item>
+                        <key type="xsd:string">OriginalPriceEUR</key>
+                        <value type="xsd:string">348.00</value>
+                    </item>
+                    <item>
+                        <key type="xsd:string">CurrentPriceEUR</key>
+                        <value type="xsd:string">348.00</value>
+                    </item>
+                    <item>
+                        <key type="xsd:string">BookingStatus</key>
+                        <value type="xsd:string">In Progress</value>
+                    </item>
+                    <item>
+                        <key type="xsd:string">ModificationDate</key>
+                        <value type="xsd:string">0000-00-00 00:00:00</value>
+                    </item>
+                    <item>
+                        <key type="xsd:string">CommissionEUR</key>
+                        <value type="xsd:string">52.20</value>
+                    </item>
+                    <item>
+                        <key type="xsd:string">CommissionPercent</key>
+                        <value type="xsd:float">15</value>
+                    </item>
+                    <item>
+                        <key type="xsd:string">RateTypeId</key>
+                        <value type="xsd:int">8730</value>
+                    </item>
+                    <item>
+                        <key type="xsd:string">Customer</key>
+                        <value type="ns1:Map">
+                            <item>
+                                <key type="xsd:string">Title</key>
+                                <value type="xsd:string">Mr</value>
+                            </item>
+                            <item>
+                                <key type="xsd:string">FirstName</key>
+                                <value type="xsd:string">Daniel</value>
+                            </item>
+                            <item>
+                                <key type="xsd:string">LastName</key>
+                                <value type="xsd:string">Aust</value>
+                            </item>
+                            <item>
+                                <key type="xsd:string">Email</key>
+                                <value type="xsd:string">d.aust@gmx.de</value>
+                            </item>
+                            <item>
+                                <key type="xsd:string">Phone</key>
+                                <value type="xsd:string">01717082840</value>
+                            </item>
+                            <item>
+                                <key type="xsd:string">Street</key>
+                                <value type="xsd:string">Hohkamp 20b</value>
+                            </item>
+                            <item>
+                                <key type="xsd:string">Zip</key>
+                                <value type="xsd:string">38116</value>
+                            </item>
+                            <item>
+                                <key type="xsd:string">City</key>
+                                <value type="xsd:string">Braunschweig</value>
+                            </item>
+                            <item>
+                                <key type="xsd:string">Country</key>
+                                <value type="xsd:string">DE</value>
+                            </item>
+                        </value>
+                    </item>
+                    <item>
+                        <key type="xsd:string">Rooms</key>
+                        <value SOAP-ENC:arrayType="ns1:Map[1]" type="SOAP-ENC:Array">
+                            <item type="ns1:Map">
+                                <item>
+                                    <key type="xsd:string">RoomId</key>
+                                    <value type="xsd:int">130533</value>
+                                </item>
+                                <item>
+                                    <key type="xsd:string">Name</key>
+                                    <value type="xsd:string">Superior Doppelzimmer mit Bad</value>
+                                </item>
+                            </item>
+                        </value>
+                    </item>
+                    <item>
+                        <key type="xsd:string">Payment</key>
+                        <value type="ns1:Map">
+                            <item>
+                                <key type="xsd:string">Type</key>
+                                <value type="xsd:string">PayedToUnister</value>
+                            </item>
+                        </value>
+                    </item>
+                    <item>
+                        <key type="xsd:string">BookingSource</key>
+                        <value type="xsd:string">hotelresevierung.de</value>
+                    </item>
+                </item>
+            </getRateBookingsReturn>
+        </SOAP-ENV:getRateBookingsResponse>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

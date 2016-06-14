@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<Transaction
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='file:/home/sowjanya/NetBeansProjects/Utils/src/GHFTesting/Transaction.xsd'>
+    <Result>
+        <Property></Property>
+        <Checkin></Checkin>
+        <Nights></Nights>
+        <RoomID></RoomID>
+        <Baserate currency=""></Baserate>
+        <Tax currency=""></Tax>
+        <OtherFees currency=""></OtherFees>
+        <ChargeCurrency></ChargeCurrency>
+        <Custom1></Custom1>
+        <AllowablePointsOfSale>
+            <PointOfSale id=""></PointOfSale>
+        </AllowablePointsOfSale>
+        <RoomBundle>
+            <RoomID></RoomID>
+            <RatePlanID></RatePlanID>
+            <Name>
+                <Text language="" text=""></Text>
+            </Name>
+            <Description>
+                <Text language="" text=""></Text>
+            </Description>
+            <PhotoURL>
+                <Caption>
+                    <Text language="" text=""></Text>
+                    <Text language="" text=""></Text>
+                    <Text language="" text=""></Text>
+                </Caption>
+                <URL></URL>
+            </PhotoURL>
+            <PhotoURL>
+                <Caption>
+                    <Text language="" text=""></Text>
+                </Caption>
+                <URL></URL>
+            </PhotoURL>
+            <PhotoURL>
+                <Caption>
+                    <Text language="" text=""></Text>
+                </Caption>
+                <URL></URL>
+            </PhotoURL>
+            <Capacity></Capacity>
+            <Occupancy></Occupancy>
+            <ChargeCurrency></ChargeCurrency>
+            <Refundable available="" refundable_until_days="" refundable_until_time=""></Refundable>
+            <BreakfastIncluded></BreakfastIncluded>
+            <ParkingIncluded></ParkingIncluded>
+            <InternetIncluded></InternetIncluded>
+            <Baserate currency=""></Baserate>
+            <Tax currency=""></Tax>
+            <OtherFees currency=""></OtherFees>
+            <Custom1></Custom1>
+            <AllowablePointsOfSale>
+                <PointOfSale id=""></PointOfSale>
+            </AllowablePointsOfSale>
+        </RoomBundle>
+        <RoomBundle>
+            <RoomID></RoomID>
+            <RatePlanID></RatePlanID>
+            <Name>
+                <Text language="" text=""></Text>
+            </Name>
+            <Description>
+                <Text language="" text=""></Text>
+            </Description>
+            <PhotoURL>
+                <Caption>
+                    <Text language="" text=""></Text>
+                </Caption>
+                <URL></URL>
+            </PhotoURL>
+            <Capacity></Capacity>
+            <Occupancy></Occupancy>
+            <ChargeCurrency></ChargeCurrency>
+            <Refundable available="" refundable_until_days="" refundable_until_time=""></Refundable>
+            <BreakfastIncluded></BreakfastIncluded>
+            <ParkingIncluded></ParkingIncluded>
+            <InternetIncluded></InternetIncluded>
+            <Baserate currency=""></Baserate>
+            <Tax currency=""></Tax>
+            <OtherFees currency=""></OtherFees>
+            <Custom1></Custom1>
+            <AllowablePointsOfSale>
+                <PointOfSale id=""></PointOfSale>
+            </AllowablePointsOfSale>
+        </RoomBundle>
+        <RoomBundle>
+            <RoomID></RoomID>
+            <RatePlanID></RatePlanID>
+            <Name>
+                <Text language="" text=""></Text>
+            </Name>
+            <Description>
+                <Text language="" text=""></Text>
+            </Description>
+            <PhotoURL>
+                <Caption>
+                    <Text language="" text=""></Text>
+                </Caption>
+                <URL></URL>
+            </PhotoURL>
+            <Capacity></Capacity>
+            <Occupancy></Occupancy>
+            <ChargeCurrency></ChargeCurrency>
+            <Refundable available="" refundable_until_days="" refundable_until_time=""></Refundable>
+            <BreakfastIncluded></BreakfastIncluded>
+            <ParkingIncluded></ParkingIncluded>
+            <InternetIncluded></InternetIncluded>
+            <Baserate currency=""></Baserate>
+            <Tax currency=""></Tax>
+            <OtherFees currency=""></OtherFees>
+            <Custom1></Custom1>
+            <AllowablePointsOfSale>
+                <PointOfSale id=""></PointOfSale>
+            </AllowablePointsOfSale>
+        </RoomBundle>
+    </Result>
+    <Result>
+        <Property></Property>
+        <Checkin></Checkin>
+        <Nights></Nights>
+        <RoomID></RoomID>
+        <Baserate currency=""></Baserate>
+        <Tax currency=""></Tax>
+        <OtherFees currency=""></OtherFees>
+        <ChargeCurrency></ChargeCurrency>
+        <Custom1></Custom1>
+        <AllowablePointsOfSale>
+            <PointOfSale id=""></PointOfSale>
+        </AllowablePointsOfSale>
+        <RoomBundle>
+            <RoomID></RoomID>
+            <RatePlanID></RatePlanID>
+            <Name>
+                <Text language="" text=""></Text>
+            </Name>
+            <Description>
+                <Text language="" text=""></Text>
+            </Description>
+            <PhotoURL>
+                <Caption>
+                    <Text language="" text=""></Text>
+                </Caption>
+                <URL></URL>
+            </PhotoURL>
+            <Capacity></Capacity>
+            <Occupancy></Occupancy>
+            <ChargeCurrency></ChargeCurrency>
+            <Refundable available="" refundable_until_days="" refundable_until_time=""></Refundable>
+            <BreakfastIncluded></BreakfastIncluded>
+            <ParkingIncluded></ParkingIncluded>
+            <InternetIncluded></InternetIncluded>
+            <Baserate currency=""></Baserate>
+            <Tax currency=""></Tax>
+            <OtherFees currency=""></OtherFees>
+            <Custom1></Custom1>
+            <AllowablePointsOfSale>
+                <PointOfSale id=""></PointOfSale>
+            </AllowablePointsOfSale>
+        </RoomBundle>
+    </Result>
+    <Result>
+        <Property></Property>
+        <Checkin></Checkin>
+        <Nights></Nights>
+        <RoomID></RoomID>
+        <Baserate currency=""></Baserate>
+        <Tax currency=""></Tax>
+        <OtherFees currency=""></OtherFees>
+        <ChargeCurrency></ChargeCurrency>
+        <Custom1></Custom1>
+        <AllowablePointsOfSale>
+            <PointOfSale id=""></PointOfSale>
+        </AllowablePointsOfSale>
+        <RoomBundle>
+            <RoomID></RoomID>
+            <RatePlanID></RatePlanID>
+            <Name>
+                <Text language="" text=""></Text>
+            </Name>
+            <Description>
+                <Text language="" text=""></Text>
+            </Description>
+            <PhotoURL>
+                <Caption>
+                    <Text language="" text=""></Text>
+                </Caption>
+                <URL></URL>
+            </PhotoURL>
+            <Capacity></Capacity>
+            <Occupancy></Occupancy>
+            <ChargeCurrency></ChargeCurrency>
+            <Refundable available="" refundable_until_days="" refundable_until_time=""></Refundable>
+            <BreakfastIncluded></BreakfastIncluded>
+            <ParkingIncluded></ParkingIncluded>
+            <InternetIncluded></InternetIncluded>
+            <Baserate currency=""></Baserate>
+            <Tax currency=""></Tax>
+            <OtherFees currency=""></OtherFees>
+            <Custom1></Custom1>
+            <AllowablePointsOfSale>
+                <PointOfSale id=""></PointOfSale>
+            </AllowablePointsOfSale>
+        </RoomBundle>
+    </Result>
+
+</Transaction>

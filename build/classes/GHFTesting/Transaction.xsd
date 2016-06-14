@@ -1,0 +1,254 @@
+?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="Transaction">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="PartnerData" type="roomPriceDataType"
+                    minOccurs="0"/>
+
+                <xs:element name="PropertyDataSet" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Property" type="xs:string"/>
+                            <xs:element name="PropertyData" type="roomPriceDataType"
+                          minOccurs="0"/>
+                            <xs:element name="RoomData" type="roomPriceDataType"
+                          minOccurs="0" maxOccurs="unbounded"/>
+                            <xs:element name="PackageData" type="roomPriceDataType"
+                          minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Result" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!-- These elements are the keys and are required -->
+                            <xs:element name="Property" type="xs:string"/>
+                            <xs:element name="Checkin" type="xs:date"/>
+                            <xs:element name="Nights" type="xs:positiveInteger"/>
+
+                            <!-- These are for the "2 occupant, min price room".  -->
+                            <xs:element name="RoomID" type="xs:string" minOccurs="0"/>
+
+                            <!-- TODO: Deprecate this field. All partners should specify rates
+                            in room bundles instead. -->
+                            <xs:group ref="hotelRateGroup"/>
+
+                            <!-- Allow multiple rates to be specified here. -->
+                            <!-- TODO: Deprecate this field. All partners should specify rates
+                            in room bundles instead. -->
+                            <xs:element name="Rates" type="multipleRatesType" minOccurs="0"/>
+
+                            <!-- Room bundle information. -->
+                            <xs:element name="RoomBundle" type="roomPriceDataType"
+                          minOccurs="0" maxOccurs="unbounded"/>
+
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="timestamp" type="xs:dateTime" use="required"/>
+            <xs:attribute name="id" type="xs:string"/>
+            <xs:attribute name="partner" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+    <!-- For all common types used across different xsd files. -->
+
+    <xs:simpleType name="priceType">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="-1.00"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="priceCurrencyType">
+        <xs:simpleContent>
+            <xs:extension base="priceType">
+                <xs:attribute name="currency" use="required">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="[A-Z][A-Z][A-Z]"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="baseRateType">
+        <xs:simpleContent>
+            <xs:extension base="priceCurrencyType">
+                <xs:attribute name="all_inclusive" type="xs:boolean"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:simpleType name="occupancyType">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="20"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="refundableType">
+        <xs:attribute name="available" type="xs:boolean" use="required"/>
+        <xs:attribute name="refundable_until_days">
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:minInclusive value="0"/>
+                    <xs:maxInclusive value="60"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="refundable_until_time" type="xs:time"/>
+    </xs:complexType>
+
+    <xs:complexType name="localizedText">
+        <xs:sequence>
+            <xs:element name="Text" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:attribute name="language"
+                        type="xs:language" use="required"/>
+                    <xs:attribute name="text"
+                        type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="photoUrlType">
+        <xs:sequence>
+            <xs:element name="Caption" type="localizedText" minOccurs="0"/>
+            <xs:element name="URL" type="xs:anyURI"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Payment types.  It is assumes that non-"hotel" payments are made
+    in the currency of the partner's POS. -->
+    <!-- Any non-"hotel" payment type also assumes a deposit is required. -->
+    <xs:simpleType name="chargeCurrencyType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="web"/>
+            <xs:enumeration value="hotel"/>
+            <xs:enumeration value="deposit"/>
+            <xs:enumeration value="installment"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Type defining different Points of Sale supported by a partner. -->
+    <xs:complexType name="allowablePointsOfSaleType">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:element name="PointOfSale">
+                <xs:complexType>
+                    <xs:attribute name="id" type="xs:string"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Group defining a basic rate info. -->
+    <xs:group name="basicRateInfoGroup">
+        <xs:sequence>
+            <xs:element name="Baserate" type="baseRateType" minOccurs="0"/>
+            <xs:element name="Tax" type="priceCurrencyType" minOccurs="0"/>
+            <xs:element name="OtherFees" type="priceCurrencyType" minOccurs="0"/>
+            <xs:element name="ExpirationTime" type="xs:dateTime" minOccurs="0"/>
+        </xs:sequence>
+    </xs:group>
+
+    <!-- Group defining package info. These includes fields that make
+    a price more likeable but do not necessarily have any dollar value
+    associated with them. e.g. amenities offered, refundability, etc. -->
+    <xs:group name="packageInfoGroup">
+        <xs:sequence>
+            <xs:element name="Refundable" type="refundableType" minOccurs="0"/>
+            <xs:element name="BreakfastIncluded" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="ParkingIncluded" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="InternetIncluded" type="xs:boolean" minOccurs="0"/>
+        </xs:sequence>
+    </xs:group>
+
+    <!-- Group defining partner handoff data for a rate. e.g. point of sale
+    information, custom URL params, etc. -->
+    <xs:group name="customFieldsGroup">
+        <xs:sequence>
+            <xs:element name="Custom1" type="xs:string" minOccurs="0"/>
+            <xs:element name="Custom2" type="xs:string" minOccurs="0"/>
+            <xs:element name="Custom3" type="xs:string" minOccurs="0"/>
+            <xs:element name="Custom4" type="xs:string" minOccurs="0"/>
+            <xs:element name="Custom5" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:group>
+
+    <!-- Group defining the rate info requested for a hotel.
+    NOTE: This does not include the package info.
+    TODO: This should be deprecated in the future as all partners
+    should send us rates per room bundle instead of per hotel. -->
+    <xs:group name="hotelRateGroup">
+        <xs:sequence>
+            <xs:group ref="basicRateInfoGroup"/>
+            <xs:element name="ChargeCurrency" type="chargeCurrencyType"
+                  minOccurs="0"/>
+            <xs:group ref="customFieldsGroup"/>
+            <xs:element name="AllowablePointsOfSale" type="allowablePointsOfSaleType"
+                  minOccurs="0"/>
+        </xs:sequence>
+    </xs:group>
+
+    <!-- Group defining the rate info requested for a particular room bundle.
+    TODO: Make this the canonical rate info all partners send us in the
+    future. -->
+    <xs:group name="roomRateGroup">
+        <xs:sequence>
+            <xs:element name="ChargeCurrency" type="chargeCurrencyType"
+                  minOccurs="0"/>
+            <xs:group ref="packageInfoGroup"/>
+            <xs:group ref="basicRateInfoGroup"/>
+            <xs:group ref="customFieldsGroup"/>
+            <xs:element name="AllowablePointsOfSale" type="allowablePointsOfSaleType"
+                  minOccurs="0"/>
+        </xs:sequence>
+    </xs:group>
+
+    <!-- Type defining multiple repeated rates. -->
+    <xs:complexType name="multipleRatesType">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:element name="Rate">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:group ref="roomRateGroup"/>
+                    </xs:sequence>
+                    <xs:attribute name="rate_rule_id" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Type defining the room info. This includes the price info,
+    room description, package info, etc.
+    TODO: Define specific types for RoomData and PackageData instead of
+    using the same data type. -->
+    <xs:complexType name="roomPriceDataType">
+        <xs:sequence>
+            <!-- These recursive types are to allow inline RoomData and PackageData
+            within a RoomBundle.  -->
+            <xs:element name="RoomData" type="roomPriceDataType" minOccurs="0"/>
+            <xs:element name="PackageData" type="roomPriceDataType" minOccurs="0"/>
+            <xs:element name="Tagline1" type="localizedText" minOccurs="0"/>
+            <xs:element name="Tagline2" type="localizedText" minOccurs="0"/>
+            <xs:element name="RoomID" type="xs:string" minOccurs="0"/>
+            <xs:element name="RatePlanID" type="xs:string" minOccurs="0"/>
+            <xs:element name="PackageID" type="xs:string" minOccurs="0"/>
+            <xs:element name="Name" type="localizedText" minOccurs="0"/>
+            <xs:element name="Description" type="localizedText" minOccurs="0"/>
+            <xs:element name="PhotoURL" type="photoUrlType"
+                  minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="Capacity" type="occupancyType" minOccurs="0"/>
+            <xs:element name="Occupancy" type="occupancyType" minOccurs="0"/>
+            <xs:group ref="roomRateGroup"/>
+            <xs:element name="Rates" type="multipleRatesType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+ 
+</xs:schema>

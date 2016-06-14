@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OTA_HotelRoomListRQ EchoToken="9876" Target="Production" Version="1.002" xmlns="http://www.opentravel.org/OTA/2003/05" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTA/2003/05 OTA_HotelRoomListRQ.xsd">
+    <POS>
+        <Source>
+            <RequestorID Type="10" ID="12400"/>
+            <BookingChannel Type="7"/>
+        </Source>
+    </POS>
+    <HotelRoomLists>
+        <HotelRoomList>
+            <RoomStays>
+                <RoomStay>
+                    <RoomTypes>
+                          <RoomType RoomTypeCode="82665">
+                            <RoomDescription Name="EZ Komfort">
+                                <Text><![CDATA[EZ Komfort]]></Text>
+                            </RoomDescription>
+                            <AdditionalDetails>
+                                <AdditionalDetail Code="7" Type="4"/>
+                            </AdditionalDetails>
+                        </RoomType>
+                          <RoomType IsRoom="false" NumberOfUnits="50" RoomTypeCode="PD107637"/>
+                    </RoomTypes>
+              <RatePlans>
+                        <RatePlan RatePlanID="108637" RatePlanName="EZ Komfort" RatePlanType="11">
+                            <Guarantee GuaranteeCode="1" GuaranteeType="None"/>
+                            <AdditionalDetails/>
+                            <RatePlanDescription Name="Single Room Comfort         ">
+                                <Text Formatted="true" Language="en"><![CDATA[Single Room Comfort]]></Text>
+                            </RatePlanDescription>
+                            <CancelPenalties/>
+                            <MealsIncluded Breakfast="true" MealPlanCodes="[11]"/>
+                            <CancelPenalties>
+                                <CancelPenalty ConfirmClassCode="CancelPolicy">
+                                    <Deadline OffsetDropTime="BeforeArrival"
+                                              OffsetTimeUnit="Day" OffsetUnitMultiplier="15"/>
+                                    <AmountPercent BasisType="FullStay" NmbrOfNights="1" Percent="40.00"/>
+                                </CancelPenalty>
+                                <CancelPenalty ConfirmClassCode="CancelPolicy">
+                                    <Deadline OffsetDropTime="BeforeArrival"
+                                              OffsetTimeUnit="Day" OffsetUnitMultiplier="10"/>
+                                    <AmountPercent BasisType="FullStay" NmbrOfNights="1" Percent="30.00"/>
+                                </CancelPenalty>
+                                <CancelPenalty ConfirmClassCode="CancelPolicy">
+                                    <Deadline OffsetDropTime="BeforeArrival"
+                                              OffsetTimeUnit="Day" OffsetUnitMultiplier="5"/>
+                                    <AmountPercent BasisType="FullStay" NmbrOfNights="1" Percent="20.00"/>
+                                </CancelPenalty>
+                                <CancelPenalty ConfirmClassCode="NoShowPolicy">
+                                    <Deadline/>
+                                    <AmountPercent BasisType="FullStay" Percent="40.00"/>
+                                </CancelPenalty>
+                            </CancelPenalties>
+                        </RatePlan>
+                    </RatePlans>
+                    <RoomRates>
+                        <RoomRate NumberOfUnits="1" RatePlanID="108637"
+                                  RatePlanType="11" RoomTypeCode="82665"/>
+                        <RoomRate RatePlanID="108637" RatePlanType="11" RoomTypeCode="PD108637">
+                            <Rates>
+                                <Rate Duration="1" EffectiveDate="2015-06-26"
+                                           GuaranteedInd="true" MaxLOS="999" MinLOS="1" NumberOfUnits="9">
+                                    <RateDescription
+                                        LastModifyDateTime="2014-04-09T00:00:00" Name="AvailabilityReport">
+                                        <ListItem ListItem="11"><![CDATA[InventoryValidityAvail]]></ListItem>
+                                        <ListItem ListItem="31"><![CDATA[InventoryNoOfUnitsAvail]]></ListItem>
+                                        <ListItem ListItem="51"><![CDATA[InventoryDayPriceAvail]]></ListItem>
+                                        <ListItem ListItem="17"><![CDATA[ProductValidityAvail]]></ListItem>
+                                        <ListItem ListItem="18"><![CDATA[ProductArrivalDayAvail]]></ListItem>
+                                        <ListItem ListItem="10"><![CDATA[ProductDepartureDayAvail]]></ListItem>
+                                        <ListItem ListItem="16"><![CDATA[ProductAvailableDayAvail]]></ListItem>
+                                        <ListItem ListItem="14"><![CDATA[ProductNonRoomValidity]]></ListItem>
+                                    </RateDescription>
+                                    <Base AmountAfterTax="65.00" CurrencyCode="EUR"/>
+                                    <CancelPolicies/>
+                                    <PaymentPolicies>
+                                        <GuaranteePayment GuaranteeCode="1"
+                                                          GuaranteeType="None" RPH="GuaranteePolicy"/>
+                                    </PaymentPolicies>
+                                    <TPA_Extensions>
+                                        <Descriptions>
+                                            <Description Name="RateDescription">
+                                                <Text Language="EN"><![CDATA[Price breakup description for 2 adult(s)]]></Text>
+                                                <Text Language="EN"><![CDATA[Price is calculated for 2 adult(s)]]></Text>
+                                                <Text Language="EN"><![CDATA[Added Child amount of '0.0' to Total calculated price of '65.0': [ 65.0 ]]]></Text>
+                                            </Description>
+                                        </Descriptions>
+                                    </TPA_Extensions>
+                                </Rate>
+                                <Rate Duration="1" EffectiveDate="2015-06-27"
+                                      GuaranteedInd="true" MaxLOS="999" MinLOS="1" NumberOfUnits="18">
+                                    <RateDescription
+                                        LastModifyDateTime="2014-04-09T00:00:00" Name="AvailabilityReport">
+                                        <ListItem ListItem="9"><![CDATA[InventoryValidityAvail]]></ListItem>
+                                        <ListItem ListItem="99"><![CDATA[InventoryNoOfUnitsAvail]]></ListItem>
+                                        <ListItem ListItem="12"><![CDATA[InventoryDayPriceAvail]]></ListItem>
+                                        <ListItem ListItem="23"><![CDATA[ProductValidityAvail]]></ListItem>
+                                        <ListItem ListItem="56"><![CDATA[ProductArrivalDayAvail]]></ListItem>
+                                        <ListItem ListItem="85"><![CDATA[ProductDepartureDayAvail]]></ListItem>
+                                        <ListItem ListItem="98"><![CDATA[ProductAvailableDayAvail]]></ListItem>
+                                        <ListItem ListItem="75"><![CDATA[ProductNonRoomValidity]]></ListItem>
+                                    </RateDescription>
+                                    <Base AmountAfterTax="55.25" CurrencyCode="EUR"/>
+                                    <CancelPolicies/>
+
+
+                                    <PaymentPolicies>
+                                        <GuaranteePayment GuaranteeCode="1"
+                                                          GuaranteeType="None" RPH="GuaranteePolicy"/>
+                                    </PaymentPolicies>
+                                    <TPA_Extensions>
+                                        <Descriptions>
+                                            <Description Name="RateDescription">
+                                                <Text Language="EN"><![CDATA[Price breakup description for 1 adult(s)]]></Text>
+                                                <Text Language="EN"><![CDATA[Price is calculated for 1 adult(s)]]></Text>
+                                                <Text Language="EN"><![CDATA[Added Child amount of '0.0' to Total calculated price of '65.0': [ 65.0 ]]]></Text>
+                                            </Description>
+                                        </Descriptions>
+                                    </TPA_Extensions>
+                                </Rate>
+                            </Rates>
+                        </RoomRate>
+                    </RoomRates>
+                    <GuestCounts>
+                        <GuestCount AgeQualifyingCode="10" Count="1"/>
+                    </GuestCounts>
+                    <TimeSpan End="2015-06-28" Start="2015-06-26"/>
+                    <BasicPropertyInfo HotelCode="12400" HotelName="CultSwitchDocHotel">
+                        <Address FormattedInd="false">
+                            <StreetNmbr><![CDATA[3rd Lane Ganta Arcade]]></StreetNmbr>
+                            <CityName><![CDATA[Visakhapatnam]]></CityName>
+                            <PostalCode><![CDATA[859623]]></PostalCode>
+                            <StateProv><![CDATA[Berlin]]></StateProv>
+                            <CountryName Code="de"><![CDATA[Deutschland]]></CountryName>
+                        </Address>
+                    </BasicPropertyInfo>
+                </RoomStay>
+            </RoomStays>
+        </HotelRoomList>
+    </HotelRoomLists>
+</OTA_HotelRoomListRQ>
